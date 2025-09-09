@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/src/style.css" rel="stylesheet">
+  <title>Главная</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hero-section {
+      background-image: url('1721b02ed31565a1bb012641df8b991132fd6dd6.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 1080px;
+      position: relative;
+      z-index: 0;
+    }
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      background-color: transparent;
+    }
+    .nav-link {
+      color: #F6F6F6;
+      transition: color 0.2s;
+    }
+    .nav-link:hover {
+      color: #FFFFFF;
+    }
+    @media (max-width: 1920px) {
+      .hero-section {
+        height: calc(100vw * 1080 / 1920);
+      }
+    }
+  </style>
+</head>
+<body class="text-sm">
+
+  <!-- Прозрачный header с цветом текста #F6F6F6 -->
+  <header class="px-8 py-6">
+    <div class="flex justify-center">
+      <ul class="flex gap-[90px]">
+        <li><a href="#" class="nav-link font-medium">Обо мне</a></li>
+        <li><a href="#" class="nav-link font-medium">Портфолио</a></li>
+        <li><a href="#" class="nav-link font-medium">Этапы работы</a></li>
+        <li><a href="#" class="nav-link font-medium">Тарифы</a></li>
+        <li><a href="#" class="nav-link font-medium">Вопросы</a></li>
+        <li><a href="#" class="nav-link font-medium">Контакты</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Герой-секция с фоновым изображением -->
+<section class="hero-section">
+  <div class="absolute left-[162px] top-1/2 transform -translate-y-1/2 max-w-2xl p-8">
+    <h1 class="text-4xl font-bold mb-4 text-[#F6F6F6]">Запечатлевая мгновения, создавая воспоминания!</h1>
+    <p class="text-lg mb-6 text-[#F6F6F6]">________________________________________</p>
+    <p class="text-lg mb-6 text-[#F6F6F6]">Профессиональный фотограф Алина Акчурина</p>
+    <button class="bg-white bg-opacity-20 hover:bg-opacity-30 text-[#F6F6F6] border border-[#F6F6F6] px-6 py-3 rounded-lg backdrop-blur-sm transition-all">
+      Записаться на съемку
+    </button>
+  </div>
+</section>
+
+<!-- Блок "Обо мне" -->
+<section class="py-20 px-8 max-w-6xl mx-auto bg-white">
+  <div class> <!-- Отступ 162px от левого края -->
+    <h2 class="text-3xl font-bold mb-12">Обо мне</h2>
+    
+    <div class="flex flex-col lg:flex-row gap-16 items-start">
+      <!-- Текстовые блоки -->
+      <div class="lg:w-1/2 space-y-8">
+        <!-- Первый текст-блок -->
+        <div class="border border-[#4F4F4F] p-8 ">
+          <p class="mb-4">Привет! Меня зовут Алина, и я профессиональный фотограф 
+                  в создании уникальных и запоминающихся изображений. Моя страсть к фотографии началась с детства, и с тех пор я стремлюсь запечатлеть самые важные моменты в жизни людей.</p>
+          <p>Я верю, что каждая фотография — это не просто изображение, 
+        а история, полная эмоций и жизни.</p>
+    <p>
+      Моя цель — создать для вас не просто снимки, а настоящие произведения искусства, которые будут радовать вас долгие годы.
+    </p>
+        </div>
+        
+        <!-- Второй текст-блок -->
+        <div class="border border-[#4F4F4F] p-8 ">
+          <p class="mb-4">Я работаю в Саратове и Москве, но готова отправиться в любое место, чтобы запечатлеть ваши особенные моменты. Мой стиль можно охарактеризовать как минималистичный, и я всегда стараюсь передать атмосферу и эмоции каждого события.
+          Я с нетерпением жду возможности поработать с вами и помочь вам сохранить ваши воспоминания на долгие годы!</p>
+        </div>
+      </div>
+      
+      <!-- Фотографии -->
+      <div class="lg:w-1/2 grid grid-cols-2 gap-6">
+        <img src="photo1.jpg" alt="Пример работы 1" class="w-full h-auto rounded-lg shadow-xl object-cover aspect-square">
+        <img src="photo2.jpg" alt="Пример работы 2" class="w-full h-auto rounded-lg shadow-xl object-cover aspect-square">
+        <img src="photo3.jpg" alt="Пример работы 3" class="w-full h-auto rounded-lg shadow-xl object-cover aspect-square">
+        <img src="photo4.jpg" alt="Пример работы 4" class="w-full h-auto rounded-lg shadow-xl object-cover aspect-square">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 px-8 max-w-[1488px] mx-auto bg-white">
+  <div class="ml-[162px] mb-12">
+    <h2 class="text-3xl font-bold">Мое портфолио</h2>
+  </div>
+  
+  <!-- Сетка портфолио -->
+  <div class="w-[1488px] grid grid-cols-4 grid-rows-2 gap-4">
+    <!-- Фото 1 -->
+    <div class="w-[372px] h-[526px] overflow-hidden">
+      <img src="portfolio1.jpg" alt="Работа 1" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+    </div>
+    
+    <!-- Фото 2 -->
+    <div class="w-[372px] h-[526px] overflow-hidden">
+      <img src="portfolio2.jpg" alt="Работа 2" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+    </div>
+    
+    <!-- Фото 3 -->
+    <div class="w-[372px] h-[526px] overflow-hidden">
+      <img src="portfolio3.jpg" alt="Работа 3" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+    </div>
+    
+    <!-- Фото 4 -->
+    <div class="w-[372px] h-[526px] overflow-hidden">
+      <img src="portfolio4.jpg" alt="Работа 4" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+    </div>
+    
+    <!-- Фото 5 -->
+    <div class="w-[372px] h-[526px] overflow-hidden">
+      <img src="portfolio5.jpg" alt="Работа 5" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+    </div>
+    
+
+    <div class="w-[372px] h-[526px] border border-[#4F4F4F] flex flex-col justify-center items-center p-8 text-center">
+      <h3 class="text-xl font-semibold mb-4">Мои</h3>
+      <p class="mb-6">работы</p>
+      <button class="bg-black text-white px-6 py-3 hover:bg-gray-800 transition">
+        Смотреть все работы
+      </button>
+    </div>
+    
+    <!-- Фото 7 -->
+    <div class="w-[372px] h-[526px] overflow-hidden">
+      <img src="portfolio7.jpg" alt="Работа 7" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+    </div>
+    
+    <!-- Фото 8 -->
+    <div class="w-[372px] h-[526px] overflow-hidden">
+      <img src="portfolio8.jpg" alt="Работа 8" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+    </div>
+  </div>
+</section>
+
+<!-- Блок "Этапы работы" -->
+<section class="py-20 px-8 max-w-[1488px] mx-auto bg-white">
+  <div class="ml-[162px] mb-12">
+    <h2 class="text-3xl font-bold">Этапы работы</h2>
+  </div>
+
+  <div class="flex flex-col lg:flex-row gap-[109px]">
+    <!-- Текстовый блок (752x428) -->
+    <div class="w-[752px] h-[428px] p-8 relative bg-gray-50">
+      <!-- Пункт 1 (левый верхний) -->
+      <div class="absolute top-8 left-8 w-[300px]">
+        <div class="text-xl font-bold mb-2">1. Обсуждение</div>
+        <p>Заполнение брифа, определение стиля и концепции съемки</p>
+      </div>
+      
+      <!-- Пункт 2 (правый верхний) -->
+      <div class="absolute top-8 right-8 w-[300px] ">
+        <div class="text-xl font-bold mb-2">2. Подготовка</div>
+        <p>Выбор локации, составление moodboard, подбор образов</p>
+      </div>
+      
+      <!-- Пункт 3 (левый нижний) -->
+      <div class="absolute bottom-8 left-8 w-[300px]">
+        <div class="text-xl font-bold mb-2">3. Съемка</div>
+        <p>Проведение фотосессии согласно утвержденному плану</p>
+      </div>
+      
+      <!-- Пункт 4 (правый нижний) -->
+      <div class="absolute bottom-8 right-8 w-[300px] ">
+        <div class="text-xl font-bold mb-2">4. Результат</div>
+        <p>Обработка фото и передача готовых материалов</p>
+      </div>
+    </div>
+
+    <!-- Блок с фотографией (734x428) -->
+    <div class="w-[734px] h-[428px] overflow-hidden">
+      <img src="work-stages.jpg" alt="Процесс работы" class="w-full h-full object-cover">
+    </div>
+  </div>
+</section>
+
+<!-- Блок "Тарифы" -->
+<section class="py-20 px-8 max-w-6xl mx-auto bg-white">
+  <div class="mb-12">
+    <h2 class="text-3xl font-bold">Тарифы</h2>
+  </div>
+
+  <div class="flex flex-col lg:flex-row gap-8 justify-center">
+    <!-- Тариф 1 -->
+    <div class="border border-[#4F4F4F] w-full lg:w-1/3 p-8 flex flex-col">
+      <h3 class="text-2xl font-bold mb-4 text-center">Женский портрет</h3>
+      <div class="text-4xl font-bold mb-8 text-center">15.000 ₽</div>
+      
+      <ul class="space-y-6 mb-8 flex-grow">
+        <li class="flex justify-between border-b border-[#4F4F4F] pb-2">
+          <span>Продолжительность</span>
+          <span class="font-medium">1 час</span>
+        </li>
+        <li class="flex justify-between border-b border-[#4F4F4F] pb-2">
+          <span>Количество фото</span>
+            <span class="font-medium">40-50</span>
+        </li>
+        <li class="flex justify-between border-b border-[#4F4F4F] pb-2">
+          <span>Прическа и макияж</span>
+          <span class="font-medium">Да</span>
+        </li>
+        <li class="flex justify-between border-b border-[#4F4F4F] pb-2">
+          <span>Прокат образа</span>
+          <span class="font-medium">Нет</span>
+        </li>
+      </ul>
+      
+      <button class="mt-auto bg-white text-black py-3 px-6 hover:bg-gray-100 transition w-full border border-[#4F4F4F] rounded-lg">
+        <a href="/tariffs/basic">
+        Подробнее
+        </a>
+      </button>
+    </div>
+
+    <!-- Тариф 2 (акцентный) -->
+    <div class="border border-[#4F4F4F] w-full lg:w-1/3 p-8 flex flex-col">
+      <h3 class="text-2xl font-bold mb-4 text-center">Прогулочная съемка</h3>
+      <div class="text-4xl font-bold mb-8  text-center">25.000 ₽</div>
+      
+      <ul class="space-y-6 mb-8 flex-grow">
+        <li class="flex justify-between border-b border-[#4F4F4F] pb-2">
+          <span>Продолжительность</span>
+          <span class="font-medium">1 час</span>
+        </li>
+        <li class="flex justify-between border-b border-[#4F4F4F] pb-2">
+          <span>Количество фото</span>
+            <span class="font-medium">20-30</span>
+        </li>
+        <li class="flex justify-between border-b border-[#4F4F4F] pb-2">
+          <span>Прическа и макияж</span>
+          <span class="font-medium">Да</span>
+        </li>
+        <li class="flex justify-between border-b border-[#4F4F4F] pb-2">
+          <span>Прокат образа</span>
+          <span class="font-medium">Нет</span>
+        </li>
+      </ul>
+      
+      <button class="mt-auto bg-white text-black py-3 px-6 hover:bg-gray-100 transition w-full border border-[#4F4F4F] rounded-lg">
+        Подробнее
+      </button>
+    </div>
+
+    <!-- Тариф 3 -->
+    <div class="border  border-[#4F4F4F] w-full lg:w-1/3 p-8 flex flex-col">
+      <h3 class="text-2xl font-bold mb-4 text-center">Семейная съемка</h3>
+      <div class="text-4xl font-bold mb-8 text-center">40.000 ₽</div>
+      
+      <ul class="space-y-6 mb-8 flex-grow">
+        <li class="flex justify-between border-b text-[#4F4F4F] border-[#4F4F4F] pb-2">
+          <span>Продолжительность</span>
+          <span class="font-medium">2 час</span>
+        </li>
+        <li class="flex justify-between border-b  text-[#4F4F4F] border-[#4F4F4F] pb-2">
+          <span>Количество фото</span>
+            <span class="font-medium">40-50</span>
+        </li>
+        <li class="flex justify-between border-b text-[#4F4F4F]  border-[#4F4F4F] pb-2">
+          <span>Прическа и макияж</span>
+          <span class="font-medium">Да</span>
+        </li>
+        <li class="flex justify-between border-b text-[#4F4F4F] border-[#4F4F4F] pb-2">
+          <span>Прокат образа</span>
+          <span class="font-medium">Нет</span>
+        </li>
+      </ul>
+      
+      <button class="mt-auto bg-white text-black py-3 px-6 hover:bg-gray-100 transition w-full border border-[#4F4F4F] rounded-lg">
+        Подробнее
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Блок с формой и контактами -->
+<section class="py-20 bg-white flex flex-col md:flex-row">
+  <!-- Левая часть - форма -->
+  <div class="md:w-1/2 border border-[#4F4F4F] p-8 md:ml-[162px]">
+    <div class="max-w-4xl mx-auto">
+      <!-- Заголовок -->
+      <h2 class="text-3xl font-bold mb-6 text-center">Понравились мои работы?</h2>
+      
+      <!-- Описание -->
+      <p class="text-lg text-gray-600 mb-8 text-center">
+        Давайте вместе создадим воспоминания, которые будут радовать вас на протяжении многих лет!<br>
+        Заполните форму ниже, и я свяжусь с вами в ближайшее время . Жду с нетерпением возможности поработать с вами!
+      </p>
+      <!-- Форма - горизонтальное расположение -->
+      <div class="flex flex-col md:flex-row gap-4 items-end mb-2">
+        <!-- Поле Имя -->
+        <div class="flex-1">
+          <input type="text" placeholder="Имя" 
+          class="w-full h-[49px] px-4 border border-[#4F4F4F] focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <!-- Поле Телефон -->
+        <div class="flex-1">
+          <input type="text" placeholder="Номер телефона" 
+          class="w-full h-[49px] px-4 border border-[#4F4F4F] focus:outline-none focus:ring-1 focus:ring-black">
+        </div>
+        <div class="flex-1">
+          <button class="w-full h-[49px] bg-[#4F4F4F] text-white hover:bg-gray-800 transition">
+            Оставить заявку
+          </button>
+        </div>
+      </div>
+      
+      <!-- Подпись о конфиденциальности -->
+      <p class="text-xs text-gray-500 ">
+        Нажимая кнопку, вы даете согласие на обработку ваших персональных данных.<br>
+        <a href="#" class="underline hover:text-gray-700">Политика конфиденциальности</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Правая часть - контакты -->
+  <div class="md:w-1/2 bg-gray-50 p-8 flex flex-col justify-center">
+    <div class="max-w-md mx-auto">
+      <h3 class="text-2xl font-bold mb-6">Контакты</h3>
+      <p class="text-lg mb-4  text-[#4F4F4F]">Свяжитесь со мной, если у вас возникли вопросы или предложения</p>
+      <p class="text-lg mb-4 text-[#4F4F4F] ">Тел: +7 (777) 777-77-77</p>
+      
+      <div class="flex gap-6">
+        <!-- Иконки соцсетей (остаются без изменений) -->
+        <a href="#" class="text-gray-600 hover:text-blue-500 transition">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.26.26-.534.26l.213-3.053 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.87 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.57-4.46c.534-.196 1.006.128.832.941z"/>
+          </svg>
+        </a>
+        <a href="#" class="text-gray-600 hover:text-blue-700 transition">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.344 16.163h-1.867v-5.44c0-1.44-.514-2.42-1.803-2.42-1.316 0-1.977.947-1.977 2.42v5.44h-1.869v-5.44c0-1.44-.515-2.42-1.803-2.42-1.316 0-1.977.947-1.977 2.42v5.44H5.656V7.714h1.867v1.44h.028c.285-.514 1.316-1.747 3.283-1.747 2.373 0 4.069 1.518 4.069 4.632v4.124z"/>
+          </svg>
+        </a>
+        <a href="#" class="text-gray-600 hover:text-pink-600 transition">
+          <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.648.07 4.85.07s3.585-.016 4.85-.07c1.17-.055 1.805-.25 2.227-.413.562-.219.96-.479 1.379-.899.419-.419.679-.818.896-1.38.164-.422.36-1.057.413-2.227.057-1.266.07-1.648.07-4.85s-.016-3.585-.07-4.85c-.055-1.17-.25-1.805-.413-2.227-.219-.563-.479-.96-.899-1.38-.419-.42-.818-.679-1.38-.896-.422-.164-1.057-.36-2.227-.413-1.265-.057-1.647-.07-4.85-.07zM12 5.838c-3.405 0-6.162 2.76-6.162 6.162S8.595 18.162 12 18.162s6.162-2.76 6.162-6.162S15.405 5.838 12 5.838zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="relative px-[162px] bg-white pt-12 pb-8">
+  <!-- Футер с двумя колонками -->
+  <div class=" max-w-[1488px] flex gap-24">
+    <!-- Первая колонка -->
+    <div>
+      <h3 class=" font-bold mb-4">Навигация</h3>
+      <ul class="space-y-3">
+        <li><a href="#" class="text-gray-600 hover:text-black transition">Обо мне</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-black transition">Портфолио</a></li>
+      </ul>
+    </div>
+    
+    <!-- Вторая колонка -->
+    <div>
+      <ul class="space-y-3">
+        <li><a href="#" class="text-gray-600 hover:text-black transition">Этапы работы</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-black transition">Тарифы</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-black transition">Контакты</a></li>
+      </ul>
+    </div>
+    
+    <!-- Колонка контактов -->
+    <div class="ml-auto">
+      <h3 class="font-bold mb-4">Контакты</h3>
+      <div class="text-gray-600 space-y-3">
+        <p>Тел: +7 (777) 777-77-77</p>
+        <div class="flex gap-4 mt-2">
+          <!-- Иконка Telegram -->
+          <a href="#" class="text-gray-600 hover:text-blue-500 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.14-.26.26-.534.26l.213-3.053 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.87 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.57-4.46c.534-.196 1.006.128.832.941z"/>
+            </svg>
+          </a>
+          <!-- Иконка VK -->
+          <a href="#" class="text-gray-600 hover:text-blue-700 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.344 16.163h-1.867v-5.44c0-1.44-.514-2.42-1.803-2.42-1.316 0-1.977.947-1.977 2.42v5.44h-1.869v-5.44c0-1.44-.515-2.42-1.803-2.42-1.316 0-1.977.947-1.977 2.42v5.44H5.656V7.714h1.867v1.44h.028c.285-.514 1.316-1.747 3.283-1.747 2.373 0 4.069 1.518 4.069 4.632v4.124z"/>
+            </svg>
+          </a>
+          <!-- Иконка Instagram -->
+          <a href="#" class="text-gray-600 hover:text-pink-600 transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.648.07 4.85.07s3.585-.016 4.85-.07c1.17-.055 1.805-.25 2.227-.413.562-.219.96-.479 1.379-.899.419-.419.679-.818.896-1.38.164-.422.36-1.057.413-2.227.057-1.266.07-1.648.07-4.85.07s-3.585-.016-4.85-.07c-1.17-.055-1.805-.25-2.227-.413-.563-.219-.96-.479-1.38-.899-.42-.419-.679-.818-.896-1.38-.164-.422-.36-1.057-.413-2.227-.057-1.266-.07-1.647-.07-4.85s.016-3.585.07-4.85c.055-1.17.249-1.805.415-2.227.217-.562.477-.96.896-1.382.42-.419.82-.679 1.38-.896.423-.164 1.058-.36 2.228-.413 1.265-.057 1.647-.07 4.85-.07zM12 5.838c-3.405 0-6.162 2.76-6.162 6.162S8.595 18.162 12 18.162s6.162-2.76 6.162-6.162S15.405 5.838 12 5.838zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</body>
+</html>

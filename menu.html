@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/src/style.css" rel="stylesheet">
+    <style>
+        
+        
+    </style>
+</head>
+<body class="text-sm">
+
+<header >
+
+    <div class="flex justify-center">
+    <p class="mr-[148px] my-[54px] text-5xl heading-font">
+        Мускул
+    </p>
+    <ul class="flex gap-[93px] my-[70px] text-xl">
+        <li><a href="index.html" class="nav-link font-medium ">Главная</a></li>
+        <li><a href="index.html#nas" class="nav-link font-medium">О нас</a></li>
+        <li><a href="index.html#new" class="nav-link font-medium">Новинки</a></li>
+        <li><a href="index.html#populir" class="nav-link font-medium">Популярное</a></li>
+        <li><a href="index.html#otsov" class="nav-link font-medium">Отзывы</a></li>
+        <li><a href="index.html#katalog" class="nav-link font-medium">Контакты</a></li>
+    </ul>
+
+      <a class="ml-[208px] my-[64px] cursor-pointer">
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.12632 17.0656C3.39796 16.2532 2.82089 15.286 2.42872 14.2206C2.03656 13.1552 1.83715 12.0128 1.84211 10.86C1.84211 8.52834 2.66694 6.29222 4.13515 4.64352C5.60336 2.99482 7.59469 2.06859 9.67105 2.06859C12.5816 2.06859 15.1237 3.84755 16.4684 6.4953H18.5316C19.2152 5.14879 20.2044 4.02977 21.3984 3.25217C22.5925 2.47458 23.9487 2.06619 25.3289 2.06859C27.4053 2.06859 29.3966 2.99482 30.8648 4.64352C32.3331 6.29222 33.1579 8.52834 33.1579 10.86C33.1579 13.2802 32.2368 15.5142 30.8737 17.0656L17.5 32.0627L4.12632 17.0656ZM32.1632 18.5343C33.9132 16.5485 35 13.8594 35 10.86C35 7.97973 33.9811 5.21746 32.1674 3.18083C30.3537 1.1442 27.8939 3.73416e-05 25.3289 3.73416e-05C22.1053 3.73416e-05 19.25 1.75831 17.5 4.4888C16.6068 3.09563 15.4306 1.96169 14.069 1.18103C12.7075 0.400383 11.1998 -0.00447699 9.67105 3.73416e-05C7.10613 3.73416e-05 4.64626 1.1442 2.83259 3.18083C1.01891 5.21746 0 7.97973 0 10.86C0 13.8594 1.08684 16.5485 2.83684 18.5343L17.5 35L32.1632 18.5343Z" fill="black"/>
+        </svg>
+      </a>
+
+    <a class="ml-8 my-[64px] cursor-pointer">
+      <svg width="35" height="35" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.579 36.0002H14.1196C9.79447 36.0002 7.63189 36.0002 6.13246 34.7647C4.63118 33.531 4.26461 31.4485 3.52963 27.2835L1.31179 14.7202C0.976532 12.8215 0.808905 11.873 1.34679 11.25C1.88283 10.627 2.87017 10.627 4.84302 10.627H32.1571C34.1299 10.627 35.1173 10.627 35.6533 11.25C36.1912 11.873 36.0217 12.8215 35.6883 14.722L35.1744 17.627" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M28.6318 10.625C28.6318 8.07229 27.5644 5.62413 25.6644 3.8191C23.7644 2.01406 21.1875 1 18.5005 1C15.8135 1 13.2365 2.01406 11.3365 3.8191C9.43654 5.62413 8.36914 8.07229 8.36914 10.625M21.5251 22.7735C23.7485 21.4943 25.6882 22.0088 26.8542 22.8313C27.3313 23.1673 27.5708 23.3352 27.7108 23.3352C27.8508 23.3352 28.0902 23.1673 28.5673 22.8313C29.7334 22.0088 31.673 21.4943 33.8964 22.7735C36.8142 24.4535 37.4737 29.9922 30.7465 34.6647C29.4626 35.5555 28.8234 36 27.7108 36C26.5982 36 25.959 35.5555 24.6769 34.6647C17.9479 29.9922 18.6073 24.4518 21.5251 22.7735Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+        
+
+    
+    </div>
+
+</header>
+    <section class="max-w-[1920px] ml-[162px] mr-[161px] mx-auto mt-[162px]    overflow-hidden">
+        <!-- Заголовок и сортировка -->
+        
+        
+        <!-- фильтр -->
+        <div class="flex flex-col md:flex-row text-xl">
+            <div class="w-[190px]   mt-12 ">
+                
+                <div class="filter-section mb-6">
+                    <div class="filter-title flex justify-between items-center mb-3">
+                        <span class="font-medium">Фасовка</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="pack1" class="mr-2">
+                            <label for="pack1">1 000 мл</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="pack2" class="mr-2">
+                            <label for="pack2">1 стик</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="pack3" class="mr-2">
+                            <label for="pack3">100 капс</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="pack4" class="mr-2">
+                            <label for="pack4">1000 г</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Фильтр по бренду -->
+                <div class="filter-section mb-6">
+                    <div class="filter-title flex justify-between items-center mb-3">
+                        <span class="font-medium">Бренд</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="brand1" class="mr-2">
+                            <label for="brand1">Optimum Nutrition</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="brand2" class="mr-2">
+                            <label for="brand2">Dymatize</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="brand3" class="mr-2">
+                            <label for="brand3">BSN</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Фильтр по целям -->
+                <div class="filter-section mb-6">
+                    <div class="filter-title flex justify-between items-center mb-3">
+                        <span class="font-medium">Цели</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="goal1" class="mr-2">
+                            <label for="goal1">Набор массы</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="goal2" class="mr-2">
+                            <label for="goal2">Похудение</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="goal3" class="mr-2">
+                            <label for="goal3">Восстановление</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Фильтр по объему -->
+                <div class="filter-section mb-6">
+                    <div class="filter-title flex justify-between items-center mb-3">
+                        <span class="font-medium">Объем, мл</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="volume1" class="mr-2">
+                            <label for="volume1">500 мл</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="volume2" class="mr-2">
+                            <label for="volume2">1000 мл</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="volume3" class="mr-2">
+                            <label for="volume3">1500 мл</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Фильтр по форме выпуска -->
+                <div class="filter-section mb-6">
+                    <div class="filter-title flex justify-between items-center mb-3">
+                        <span class="font-medium">Форма выпуска</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <input type="checkbox" id="form1" class="mr-2">
+                            <label for="form1">Порошок</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="form2" class="mr-2">
+                            <label for="form2">Капсулы</label>
+                        </div>
+                        <div class="flex items-center">
+                            <input type="checkbox" id="form3" class="mr-2">
+                            <label for="form3">Таблетки</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Фильтр по цене -->
+                <div class="filter-section mb-6">
+            <div class="filter-title flex justify-between items-center mb-3">
+                <span class="font-medium">Цена, ₽</span>
+            </div>
+            <div class="px-2">
+                
+                
+                <div class="flex justify-between items-center mt-4">
+                    <div class="border-[1.25px] border-black rounded-[4.6px] text-center text-xl w-[71px] h-[28px]">
+                        <span class="text-[16px]">500</span>
+                    </div>
+                    <span class="font-bold">-</span>
+                    <div class="border-[1.25px] border-black rounded-[4.6px] text-center text-xl w-[71px] h-[28px]">
+                        <span class="text-[16px]">2376</span>
+                    </div>
+                </div>
+                    <div class="relative mt-4">
+                        <div class="relative h-1 bg-black rounded">
+                        
+                                <div class="absolute h-1 bg-black rounded" style="left: 0%; width: 100%"></div>
+                        </div>
+                        
+                        <div class="absolute top-1/2 transform -translate-y-1/2 w-3 h-3 bg-black rounded-full" style="left: 0%"></div>
+                        <div class="absolute top-1/2 transform -translate-y-1/2 w-3 h-3 bg-black rounded-full" style="left: 100%"></div>
+                </div>
+            </div>
+       
+        
+    
+</div>
+                
+            </div>
+            
+            <!-- часть с товарами -->
+            <div class="ml-[144px]   ">
+            <div class="">
+                <div class="flex justify-between items-center p-[45px]">
+                  <span class="font-medium text-[#636363] text-lg">Главная</span>
+                      <div class="flex items-center gap-2 ml-auto">
+                          <span class="font-medium text-[#636363] text-lg">По популярности</span>
+                          <div class="flex flex-1">
+                        <!--  вверх -->
+                      <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.62961 16.6085C3.83417 16.813 4.16583 16.813 4.37039 16.6085L7.70389 13.275C7.90845 13.0704 7.90845 12.7388 7.70389 12.5342C7.49933 12.3296 7.16767 12.3296 6.96311 12.5342L4 15.4973L1.03689 12.5342C0.832325 12.3296 0.500668 12.3296 0.296107 12.5342C0.0915468 12.7388 0.0915468 13.0704 0.296107 13.275L3.62961 16.6085ZM4 0H3.47619V16.2381H4H4.52381V0H4Z" fill="#636363"/>
+                      </svg>
+                        <!--  вниз -->
+                      <svg width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.37039 0.629797C4.16583 0.425238 3.83417 0.425238 3.62961 0.629797L0.296107 3.9633C0.0915468 4.16786 0.0915468 4.49952 0.296107 4.70408C0.500668 4.90864 0.832325 4.90864 1.03689 4.70408L4 1.74097L6.96311 4.70408C7.16767 4.90864 7.49933 4.90864 7.70389 4.70408C7.90845 4.49952 7.90845 4.16786 7.70389 3.9633L4.37039 0.629797ZM4 17.2383H4.52381L4.52381 1.00019H4H3.47619L3.47619 17.2383H4Z" fill="#636363"/>
+                      </svg>
+                    </div>
+                </div>
+            </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-15">
+                    <!-- Товар 1 -->
+                <div class="w-[367px] h-[529px] relative">
+  
+  <!-- Контейнер для центрирования фото -->
+  <div class="mrene flex justify-center items-center  relative">
+    <img src="src/img/bb74252c0fefc2927e7c413116a3646d6deb90c2.png" alt="Протеин сывороточный" class="w-[200px] h-[255px] rounded-lg">
+    
+    <!-- Иконка -->
+    <div class="absolute top-2 right-2 p-5">
+      <img src="src/svg/Vector (1).svg" alt="Иконка" class="w-[26px] h-[26px]">
+    </div>
+  </div>
+
+  <p class="text-[22px] my-2 ">
+    Протеин сывороточный
+  </p>
+  <p class="text-[22px] font-bold">
+    2 342 ₽
+  </p>
+
+  <div class="  mt-2 green  text-xl grid place-items-center">
+      <a href="header.html">
+    В корзину
+      </a>
+    </div>
+  
+</div>
+                    
+                    <!-- Товар 2 -->
+    <div class="w-[367px] h-[529px] relative">
+  
+  <!-- Контейнер для центрирования фото -->
+  <div class="mrene flex justify-center items-center  relative">
+    <img src="src/img/099590c81e34a0bb551c9acf7b4b8111b058fd0b.png" alt="Протеин сывороточный" class="w-[100px] h-[255px] rounded-lg">
+    
+    <!-- Иконка -->
+    <div class="absolute top-2 right-2 p-5">
+      <svg width="26" height="26" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="active:fill-[#196950] transition-colors duration-150 cursor-pointer">
+        
+<path d="M4.12632 17.0656C3.39796 16.2532 2.82089 15.286 2.42872 14.2206C2.03656 13.1552 1.83715 12.0128 1.84211 10.86C1.84211 8.52834 2.66694 6.29222 4.13515 4.64352C5.60336 2.99482 7.59469 2.06859 9.67105 2.06859C12.5816 2.06859 15.1237 3.84755 16.4684 6.4953H18.5316C19.2152 5.14879 20.2044 4.02977 21.3984 3.25217C22.5925 2.47458 23.9487 2.06619 25.3289 2.06859C27.4053 2.06859 29.3966 2.99482 30.8648 4.64352C32.3331 6.29222 33.1579 8.52834 33.1579 10.86C33.1579 13.2802 32.2368 15.5142 30.8737 17.0656L17.5 32.0627L4.12632 17.0656ZM32.1632 18.5343C33.9132 16.5485 35 13.8594 35 10.86C35 7.97973 33.9811 5.21746 32.1674 3.18083C30.3537 1.1442 27.8939 3.73416e-05 25.3289 3.73416e-05C22.1053 3.73416e-05 19.25 1.75831 17.5 4.4888C16.6068 3.09563 15.4306 1.96169 14.069 1.18103C12.7075 0.400383 11.1998 -0.00447699 9.67105 3.73416e-05C7.10613 3.73416e-05 4.64626 1.1442 2.83259 3.18083C1.01891 5.21746 0 7.97973 0 10.86C0 13.8594 1.08684 16.5485 2.83684 18.5343L17.5 35L32.1632 18.5343Z" fill="#196950"/>
+</svg>
+    </div>
+  </div>
+
+  <p class="text-[22px] my-2 ">
+    Шейкер металлический
+  </p>
+  <p class="text-[22px] font-bold">
+    871 ₽
+  </p>
+  
+  <div class="  mt-2 green  text-xl grid place-items-center">
+      <a href="header.html">
+    В корзину
+      </a>
+    </div>
+</div>
+                    
+                    <!-- Товар 3 -->
+                     <div class="w-[367px] h-[529px] relative">
+  
+  <!-- Контейнер для центрирования фото -->
+  <div class="mrene flex justify-center items-center  relative">
+    <img src="src/img/030d0e191cac70abc059d0a026e7e8c271837ff0.png" alt="Протеин сывороточный" class="w-[194px] h-[265px] ">
+    
+    <!-- Иконка -->
+    <div class="absolute top-2 right-2 p-5">
+      <img src="src/svg/Vector (1).svg" alt="Иконка" class="w-[26px] h-[26px]">
+    </div>
+  </div>
+
+  <p class="text-[22px] my-2 ">
+    Витамины Omega 3 
+  </p>
+  <p class="text-[22px] font-bold">
+    1012 ₽
+  </p>
+  
+  <div class="  mt-2 green  text-xl grid place-items-center">
+      <a href="header.html">
+    В корзину
+      </a>
+    </div>
+</div>
+
+                     <div class="w-[367px] h-[529px] relative">
+  
+  <!-- Контейнер для центрирования фото -->
+  <div class="mrene flex justify-center items-center  relative">
+    <img src="src/img/06852c4335d77e7ab6d0a091f18f18fceca76583.png" alt="Протеин сывороточный" class="w-[200px] h-[255px] rounded-lg">
+    
+    <!-- Иконка -->
+    <div class="absolute top-2 right-2 p-5">
+      <img 
+        src="src/svg/Vector (1).svg" 
+        alt="Иконка" 
+        class="w-[26px] h-[26px]"
+      >
+    </div>
+  </div>
+
+  <p class="text-[22px] my-2 ">
+    Pre-workout, 60 капсул
+  </p>
+  <p class="text-[22px] font-bold">
+    477 ₽
+  </p>
+  
+  <div class="  mt-2 green  text-xl grid place-items-center">
+      <a href="header.html">
+    В корзину
+      </a>
+    </div>
+</div>
+
+
+
+
+<div class="w-[367px] h-[529px] relative">
+  
+  <!-- Контейнер для центрирования фото -->
+  <div class="mrene flex justify-center items-center  relative">
+    <img src="src/img/5e7b3d940457b2ab770c469bfc70034a80f6513f.png" alt="Протеин сывороточный" class="w-[197px] h-[212px] rounded-lg">
+    
+    <!-- Иконка -->
+    <div class="absolute top-2 right-2 p-5">
+      <img src="src/svg/Vector (1).svg" alt="Иконка" class="w-[26px] h-[26px]">
+    </div>
+  </div>
+
+  <p class="text-[22px] my-2 ">
+    Коллаген
+  </p>
+  <p class="text-[22px] font-bold">
+    800 ₽
+  </p>
+  
+  <div class="  mt-2 green  text-xl grid place-items-center">
+      <a href="header.html">
+    В корзину
+      </a>
+    </div>
+</div>
+                    
+                    <!-- Товар 2 -->
+                     <div class="w-[367px] h-[529px] relative">
+  
+  <!-- Контейнер для центрирования фото -->
+  <div class="mrene flex justify-center items-center  relative">
+    <img src="src/img/84c6d1011462d8db961c874d46955cca4c7afe19.png" alt="Протеин сывороточный" class="w-[174px] h-[262px] rounded-lg">
+    
+    <!-- Иконка -->
+    <div class="absolute top-2 right-2 p-5">
+      <img 
+        src="src/svg/Vector (1).svg" 
+        alt="Иконка" 
+        class="w-[26px] h-[26px]"
+      >
+    </div>
+  </div>
+
+  <p class="text-[22px] my-2 ">
+    Протеин сывороточный
+  </p>
+  <p class="text-[22px] font-bold">
+    1184 ₽
+  </p>
+  
+  <div class="  mt-2 green  text-xl grid place-items-center">
+      <a href="header.html">
+    В корзину
+      </a>
+    </div>
+</div>
+                    
+                    <!-- Товар 3 -->
+                     <div class="w-[367px] h-[529px] relative">
+  
+  <!-- Контейнер для центрирования фото -->
+  <div class="mrene flex justify-center items-center  relative">
+    <img src="src/img/d9a170385fc7aa1c1f979208a010b9cdd3c0d07a.png" alt="Протеин сывороточный" class="w-[223px] h-[265px] rounded-lg">
+    
+    <!-- Иконка -->
+    <div class="absolute top-2 right-2 p-5">
+      <img src="src/svg/Vector (1).svg"  alt="Иконка" class="w-[26px] h-[26px]">
+    </div>
+  </div>
+
+  <p class="text-[22px] my-2 ">
+    Шейкер
+  </p>
+  <p class="text-[22px] font-bold">
+    483 ₽
+  </p>
+  
+  <div class="  mt-2 green  text-xl grid place-items-center">
+      <a href="header.html">
+    В корзину
+      </a>
+    </div>
+</div>
+
+<div class="w-[367px] h-[529px] relative">
+  
+  <!-- Контейнер для центрирования фото -->
+  <div class="mrene flex justify-center items-center  relative">
+    <img src="src/img/73b7062f95f96427743b64198a6ce8267cd025e7.png" alt="Протеин сывороточный" class="w-[200px] h-[255px] rounded-lg rotate-6">
+    
+    <!-- Иконка -->
+    <div class="absolute top-2 right-2 p-5">
+      <img  src="src/svg/Vector (1).svg" alt="Иконка"  class="w-[26px] h-[26px]">
+    </div>
+  </div>
+
+  <p class="text-[22px] my-2 ">
+    Биотин 5000
+  </p>
+  <p class="text-[22px] font-bold">
+    477 ₽
+  </p>
+  
+  <div class="  mt-2 green  text-xl grid place-items-center">
+      <a href="header.html">
+    В корзину
+      </a>
+    </div>
+</div>
+
+
+
+
+<div class="w-[367px] h-[529px] relative">
+  
+  <!-- Контейнер для центрирования фото -->
+  <div class="mrene flex justify-center items-center  relative">
+    <img src="src/img/1fa1d5fedd57a5bb169d9741661b6a9930478677.png" alt="Протеин сывороточный" class="w-[213px] h-[255px] rounded-lg mr-5">
+    
+    <!-- Иконка -->
+    <div class="absolute top-2 right-2 p-5">
+      <img 
+        src="src/svg/Vector (1).svg" 
+        alt="Иконка" 
+        class="w-[26px] h-[26px]"
+      >
+    </div>
+  </div>
+
+  <p class="text-[22px] my-2 ">
+    Шейкер 600 мл
+  </p>
+  <p class="text-[22px] font-bold">
+    297 ₽
+  </p>
+  
+  <div class="  mt-2 green  text-xl grid place-items-center">
+      <a href="header.html">
+    В корзину
+      </a>
+    </div>
+</div>
+                    
+<!-- Товар 2 -->
+<div class="w-[367px] h-[529px] relative">
+  
+  <!-- Контейнер для центрирования фото -->
+  <div class="mrene flex justify-center items-center  relative">
+    <img src="src/img/5d1d8177008a4bc0c698a9c142cc8bc9275c8cd5.png" alt="Протеин сывороточный" class="w-[151px] h-[250px] rounded-lg -rotate-6">
+    
+    <!-- Иконка -->
+    <div class="absolute top-2 right-2 p-5">
+      <img 
+        src="src/svg/Vector (1).svg" 
+        alt="Иконка" 
+        class="w-[26px] h-[26px]"
+      >
+    </div>
+  </div>
+
+  <p class="text-[22px] my-2 ">
+    Витамин D3
+  </p>
+  
+  <p class="text-[22px] font-bold">
+    871 ₽
+  </p>
+  
+  <div class="  mt-2 green  text-xl grid place-items-center">
+      <a href="header.html">
+    В корзину
+      </a>
+    </div>
+</div>
+                    
+                    <!-- Товар 3 -->
+                     <div class="w-[367px] h-[529px] relative">
+  
+  <!-- Контейнер для центрирования фото -->
+  <div class="mrene flex justify-center items-center  relative">
+    <img src="src/img/808790007358843c1558fb718fa12fc3109d5a72.png" alt="Протеин сывороточный" class="w-[254px] h-[207px] rounded-lg">
+    
+    <!-- Иконка -->
+    <div class="absolute top-2 right-2 p-5">
+      <img 
+        src="src/svg/Vector (1).svg" 
+        alt="Иконка" 
+        class="w-[26px] h-[26px]"
+      >
+    </div>
+  </div>
+
+  <p class="text-[22px] my-2 ">
+    ВСАА  Аминокомлпекс
+  </p>
+  <p class="text-[22px] font-bold">
+    208 ₽
+  </p>
+  
+  <div class="  mt-2 green  text-xl grid place-items-center">
+      <a href="header.html">
+    В корзину
+      </a>
+    </div>
+</div>
+
+ <div class="w-[367px] h-[529px] relative">
+  
+  <!-- Контейнер для центрирования фото -->
+  <div class="mrene flex justify-center items-center  relative">
+    <img src="src/img/030d0e191cac70abc059d0a026e7e8c271837ff0.png" alt="Протеин сывороточный" class="w-[200px] h-[255px] rounded-lg mr-5">
+    
+    <!-- Иконка -->
+    <div class="absolute top-2 right-2 p-5">
+      <img src="src/svg/Vector (1).svg" alt="Иконка" class="w-[26px] h-[26px]">
+    </div>
+  </div>
+
+  <p class="text-[22px] my-2 ">
+    Протеин сывороточный
+  </p>
+  <p class="text-[22px] font-bold">
+    1973 ₽
+  </p>
+  
+  <div class="  mt-2 green  text-xl grid place-items-center">
+      <a href="header.html">
+    В корзину
+      </a>
+    </div>
+</div>
+
+                </div>
+            </div>
+   
+        </div>
+        
+    </section>
+<a class="cursor-pointer">
+  <p class="text-center text-xl underline">Показать еще</p>
+</a>
+    
+
+    <script>
+        // Простой скрипт для работы фильтров
+        document.querySelectorAll('.filter-title').forEach(title => {
+            title.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                content.style.display = content.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+    </script>
+
+<section class="ml-[162px] mt-[82px] mr-[161px]">
+  <h1 class="text-[55px]  heading-font mb-[69px]">Контакты</h1>
+  
+  <div class="flex  items-start"> 
+    
+    
+    <div class="flex-1">
+      <div class="space-y-9"> 
+        
+      
+        <div class="flex items-center gap-5">
+          <img 
+        src="src/svg/Vector (4).svg" 
+        alt="Иконка" 
+        class="w-[50px] h-[50px]"
+      >
+          <div>
+            <p class="text-2xl text-gray-700">+7 (777) 777-77-77</p>
+          </div>
+        </div>
+
+        <!-- Адрес -->
+        <div class="flex items-center gap-5">
+          <img 
+          src="src/svg/Vector (5).svg" 
+          alt="Иконка" 
+          class="w-[50px] h-[50px]"
+        >
+          <div>
+            <p class=" text-gray-700 text-2xl">г. Санкт-Петербург, наб. реки Фонтанки, д. 20</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-5">
+            <img 
+            src="src/svg/Vector (6).svg" 
+            alt="Иконка" 
+            class="w-[50px] h-[50px]"
+          >
+          <div>
+            <p class="text-2xl text-gray-700">Задать вопрос: help_muscle.ru</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flex gap-[62px] mt-8 pt-6">
+        <a href="#" class="text-[#196950] hover:text-green-800 transition">
+          <img 
+        src="src/svg/33.svg" 
+        alt="Иконка" 
+        class="w-[50px] h-[50px]"
+      >
+        </a>
+        
+        <a href="#" class="text-[#196950] hover:text-green-800 transition">
+            <img 
+          src="src/svg/Vector (3).svg" 
+          alt="Иконка" 
+          class="w-[50px] h-[50px]"
+        >
+        </a>
+        
+        <a href="#" class="text-[#196950] hover:text-green-800 transition">
+          <img 
+        src="src/svg/Vector (2).svg" 
+        alt="Иконка" 
+        class="w-[50px] h-[50px]"
+      >
+        </a>
+      </div>
+    </div>
+
+
+    <div class="flex-1  mgrene">
+      <iframe class=" rounded-[30px] " src="https://yandex.ru/map-widget/v1/?um=constructor%3A33adac18ed2bab68dced24e2b8e8011b28f3c77a01bead313e8b9f068975f313&amp;source=constructor" width="870" height="310" frameborder="0"></iframe>
+    </div>
+  </div>
+</section>
+
+
+<section class="relative px-[162px]  pt-20 pb-8">
+    
+    <div class=" max-w-[1920px] flex gap-24">
+    
+    <div>
+    <ul class="space-y-3 text-xl">
+        <li><a href="index.html" class=" hover:text-gray-600 transition">О нас </a></li>
+        <li><a href="index.html#nas" class=" hover:text-gray-600 transition">Направления</a></li>
+        <li><a href="index.html#new" class=" hover:text-gray-600 transition">Тренеры</a></li>
+        <li><a href="index.html#populir" class=" hover:text-gray-600 transition">Абонементы</a></li>
+        <li><a href="index.html#otsov" class=" hover:text-gray-600 transition">Расписание занятий</a></li>
+        <li><a href="index.html#katalog" class= "hover:text-gray-600 transition">Контакты</a></li>
+
+    </ul>
+    </div>
+    
+    <div class="ml-auto">
+    <div class="space-y-3">
+        <p class="text-right leading-[1.8] text-xl">
+        +7 (777) 777-77-77<br>
+    <span class=" h-3 text-xl"></span> 
+        help_muscle.ru<br>
+    <span class=" h-3 text-xl"></span> 
+        г. Санкт-Петербург, наб. реки Фонтанки, д. 20
+    </p>
+        <div class="flex gap-10  justify-end mt-8 pt-10">
+        <a href="#" class="text-[#196950] hover:text-green-800 transition">
+            <img 
+            src="src/svg/33.svg" 
+            alt="Иконка" 
+            class="w-[40px] h-[40px]"
+        >
+        </a>
+        
+        <a href="#" class="text-[#196950] hover:text-green-800 transition">
+                <img 
+            src="src/svg/Vector (2).svg" 
+            alt="Иконка" 
+            class="w-[40px] h-[40px]"
+            >
+        </a>
+        
+        <a href="#" class="text-[#196950] hover:text-green-800 transition">
+                <img 
+                src="src/svg/Vector (3).svg" 
+                alt="Иконка" 
+                class="w-[40px] h-[40px]"
+            >
+        </a>
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+
+
+</body>
+</html>
