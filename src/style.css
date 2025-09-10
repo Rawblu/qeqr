@@ -51,7 +51,6 @@
     @media (max-width: 768px) {
     .green {
         width: 150px;
-        height: 30px;
         border-radius: 16px;
         font-size: 16px;
         }
@@ -143,8 +142,8 @@ br {
     .fullgrene {
         width: 100%;
         max-width: 350px;
-        height: 300px;
-        margin: 0 auto;
+        height: auto;
+
     }
     
     .fgrene {
@@ -162,7 +161,14 @@ br {
         font-size: 18px;
     }
 }
-
+@media (min-width: 768px) {
+    .nofullgrene,
+    .fullgrene {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+}
 
     .vgrene{
         border-radius: 25px;
@@ -175,8 +181,10 @@ br {
     }
 @media (max-width: 768px) {
     .vgrene {
-        width: 385px;
-        height: 200px;
+        max-width: 385px;
+        width: auto;
+        min-height: 200px;
+
         border-width: 3px;
         margin: 0 ;
     }
@@ -185,9 +193,10 @@ br {
     .mgrene{
         border-radius: 32px;
         border: 5px #196950  solid;
-        width: 885px;
-        height: 327px;
+        max-width:885px;
+        height: auto;
     }
+
     .nofullgrene{
         border-radius: 50px;
         border: 5px #196950  solid;
@@ -201,6 +210,29 @@ br {
         width: 368px;
         height: 381px;
     }
+    @media (max-width: 768px) {
+    .nofullgrene,
+    .fullgrene {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+    
+    .fgrene {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .ggreen {
+        width: 200px;
+        height: 44px;
+        font-size: 18px;
+    }
+}
+
     .custom-select {
             appearance: none;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23333'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");

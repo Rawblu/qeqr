@@ -13,39 +13,103 @@
 </head>
 <body class="text-sm">
 
-<header >
-
-    <div class="flex justify-center">
-    <p class="mr-[148px] my-[54px] text-5xl heading-font">
-        Мускул
+<header>
+  <!-- Десктопная версия (остается как было) -->
+  <div class="flex justify-center">
+    <p class="text-[1.5rem] lg:text-[1.875rem] 2xl:text-[3rem] my-[2.8125vw] mr-[7.7vw]">
+      Мускул
     </p>
-    <ul class="flex gap-[93px] my-[70px] text-xl">
-        <li><a href="index.html" class="nav-link font-medium ">Главная</a></li>
-        <li><a href="index.html#nas" class="nav-link font-medium">О нас</a></li>
-        <li><a href="index.html#new" class="nav-link font-medium">Новинки</a></li>
-        <li><a href="index.html#populir" class="nav-link font-medium">Популярное</a></li>
-        <li><a href="index.html#otsov" class="nav-link font-medium">Отзывы</a></li>
-        <li><a href="index.html#katalog" class="nav-link font-medium">Контакты</a></li>
+    <ul class="flex lg:text-[0.875rem] gap-[4.84375vw] xl:text-[1rem] my-[3.645vw] 2xl:text-[1.25rem]">
+      <li><a href="index.html" class="nav-link font-medium">Главная</a></li>
+      <li><a href="#nas" class="nav-link font-medium">О нас</a></li>
+      <li><a href="#new" class="nav-link font-medium">Новинки</a></li>
+      <li><a href="#populir" class="nav-link font-medium">Популярное</a></li>
+      <li><a href="#otsov" class="nav-link font-medium">Отзывы</a></li>
+      <li><a href="#katalog" class="nav-link font-medium">Контакты</a></li>
     </ul>
 
-      <a class="ml-[208px] my-[64px] cursor-pointer">
-        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M4.12632 17.0656C3.39796 16.2532 2.82089 15.286 2.42872 14.2206C2.03656 13.1552 1.83715 12.0128 1.84211 10.86C1.84211 8.52834 2.66694 6.29222 4.13515 4.64352C5.60336 2.99482 7.59469 2.06859 9.67105 2.06859C12.5816 2.06859 15.1237 3.84755 16.4684 6.4953H18.5316C19.2152 5.14879 20.2044 4.02977 21.3984 3.25217C22.5925 2.47458 23.9487 2.06619 25.3289 2.06859C27.4053 2.06859 29.3966 2.99482 30.8648 4.64352C32.3331 6.29222 33.1579 8.52834 33.1579 10.86C33.1579 13.2802 32.2368 15.5142 30.8737 17.0656L17.5 32.0627L4.12632 17.0656ZM32.1632 18.5343C33.9132 16.5485 35 13.8594 35 10.86C35 7.97973 33.9811 5.21746 32.1674 3.18083C30.3537 1.1442 27.8939 3.73416e-05 25.3289 3.73416e-05C22.1053 3.73416e-05 19.25 1.75831 17.5 4.4888C16.6068 3.09563 15.4306 1.96169 14.069 1.18103C12.7075 0.400383 11.1998 -0.00447699 9.67105 3.73416e-05C7.10613 3.73416e-05 4.64626 1.1442 2.83259 3.18083C1.01891 5.21746 0 7.97973 0 10.86C0 13.8594 1.08684 16.5485 2.83684 18.5343L17.5 35L32.1632 18.5343Z" fill="black"/>
-        </svg>
-      </a>
+    <a class="ml-[10.8vw] my-[3.34vw] cursor-pointer">
+      <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.12632 17.0656C3.39796 16.2532 2.82089 15.286 2.42872 14.2206C2.03656 13.1552 1.83715 12.0128 1.84211 10.86C1.84211 8.52834 2.66694 6.29222 4.13515 4.64352C5.60336 2.99482 7.59469 2.06859 9.67105 2.06859C12.5816 2.06859 15.1237 3.84755 16.4684 6.4953H18.5316C19.2152 5.14879 20.2044 4.02977 21.3984 3.25217C22.5925 2.47458 23.9487 2.06619 25.3289 2.06859C27.4053 2.06859 29.3966 2.99482 30.8648 4.64352C32.3331 6.29222 33.1579 8.52834 33.1579 10.86C33.1579 13.2802 32.2368 15.5142 30.8737 17.0656L17.5 32.0627L4.12632 17.0656ZM32.1632 18.5343C33.9132 16.5485 35 13.8594 35 10.86C35 7.97973 33.9811 5.21746 32.1674 3.18083C30.3537 1.1442 27.8939 3.73416e-05 25.3289 3.73416e-05C22.1053 3.73416e-05 19.25 1.75831 17.5 4.4888C16.6068 3.09563 15.4306 1.96169 14.069 1.18103C12.7075 0.400383 11.1998 -0.00447699 9.67105 3.73416e-05C7.10613 3.73416e-05 4.64626 1.1442 2.83259 3.18083C1.01891 5.21746 0 7.97973 0 10.86C0 13.8594 1.08684 16.5485 2.83684 18.5343L17.5 35L32.1632 18.5343Z" fill="black"/>
+      </svg>
+    </a>
 
-    <a class="ml-8 my-[64px] cursor-pointer">
+    <a class="ml-[1.66vw] my-[3.34vw] cursor-pointer">
       <svg width="35" height="35" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M17.579 36.0002H14.1196C9.79447 36.0002 7.63189 36.0002 6.13246 34.7647C4.63118 33.531 4.26461 31.4485 3.52963 27.2835L1.31179 14.7202C0.976532 12.8215 0.808905 11.873 1.34679 11.25C1.88283 10.627 2.87017 10.627 4.84302 10.627H32.1571C34.1299 10.627 35.1173 10.627 35.6533 11.25C36.1912 11.873 36.0217 12.8215 35.6883 14.722L35.1744 17.627" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M28.6318 10.625C28.6318 8.07229 27.5644 5.62413 25.6644 3.8191C23.7644 2.01406 21.1875 1 18.5005 1C15.8135 1 13.2365 2.01406 11.3365 3.8191C9.43654 5.62413 8.36914 8.07229 8.36914 10.625M21.5251 22.7735C23.7485 21.4943 25.6882 22.0088 26.8542 22.8313C27.3313 23.1673 27.5708 23.3352 27.7108 23.3352C27.8508 23.3352 28.0902 23.1673 28.5673 22.8313C29.7334 22.0088 31.673 21.4943 33.8964 22.7735C36.8142 24.4535 37.4737 29.9922 30.7465 34.6647C29.4626 35.5555 28.8234 36 27.7108 36C26.5982 36 25.959 35.5555 24.6769 34.6647C17.9479 29.9922 18.6073 24.4518 21.5251 22.7735Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+      </svg>
     </a>
-        
+  </div>
 
-    
+
+  
+  <div class="md:hidden flex items-center justify-between px-[4vw] py-[2.8125vw]">
+    <div class="flex items-center">
+      <!--  бургер -->
+      <button class="mr-[4vw] p-2 hover:text-green-700 transition-colors" id="menu-toggle">
+        <?xml version="1.0" ?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="28px" height="28px" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7C4 6.44771 4.44772 6 5 6H24C24.5523 6 25 6.44771 25 7C25 7.55229 24.5523 8 24 8H5C4.44772 8 4 7.55229 4 7Z" fill="#000000"/><path d="M4 13.9998C4 13.4475 4.44772 12.9997 5 12.9997L16 13C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15L5 14.9998C4.44772 14.9998 4 14.552 4 13.9998Z" fill="#000000"/><path d="M5 19.9998C4.44772 19.9998 4 20.4475 4 20.9998C4 21.552 4.44772 21.9997 5 21.9997H22C22.5523 21.9997 23 21.552 23 20.9998C23 20.4475 22.5523 19.9998 22 19.9998H5Z" fill="#000000"/></svg>
+      </button>
+      <a href="index.html" class="text-[1.5rem] heading-font">
+        Мускул
+      </a>
     </div>
 
+    <div class="flex items-center gap-[4vw]">
+      <a class="cursor-pointer">
+        <svg width="28" height="28" viewBox="0 0 35 35" fill="currentColor">
+          <path d="M4.12632 17.0656C3.39796 16.2532 2.82089 15.286 2.42872 14.2206C2.03656 13.1552 1.83715 12.0128 1.84211 10.86C1.84211 8.52834 2.66694 6.29222 4.13515 4.64352C5.60336 2.99482 7.59469 2.06859 9.67105 2.06859C12.5816 2.06859 15.1237 3.84755 16.4684 6.4953H18.5316C19.2152 5.14879 20.2044 4.02977 21.3984 3.25217C22.5925 2.47458 23.9487 2.06619 25.3289 2.06859C27.4053 2.06859 29.3966 2.99482 30.8648 4.64352C32.3331 6.29222 33.1579 8.52834 33.1579 10.86C33.1579 13.2802 32.2368 15.5142 30.8737 17.0656L17.5 32.0627L4.12632 17.0656ZM32.1632 18.5343C33.9132 16.5485 35 13.8594 35 10.86C35 7.97973 33.9811 5.21746 32.1674 3.18083C30.3537 1.1442 27.8939 3.73416e-05 25.3289 3.73416e-05C22.1053 3.73416e-05 19.25 1.75831 17.5 4.4888C16.6068 3.09563 15.4306 1.96169 14.069 1.18103C12.7075 0.400383 11.1998 -0.00447699 9.67105 3.73416e-05C7.10613 3.73416e-05 4.64626 1.1442 2.83259 3.18083C1.01891 5.21746 0 7.97973 0 10.86C0 13.8594 1.08684 16.5485 2.83684 18.5343L17.5 35L32.1632 18.5343Z"/>
+        </svg>
+      </a>
+
+      <a class="cursor-pointer">
+        <svg width="28" height="28" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.579 36.0002H14.1196C9.79447 36.0002 7.63189 36.0002 6.13246 34.7647C4.63118 33.531 4.26461 31.4485 3.52963 27.2835L1.31179 14.7202C0.976532 12.8215 0.808905 11.873 1.34679 11.25C1.88283 10.627 2.87017 10.627 4.84302 10.627H32.1571C34.1299 10.627 35.1173 10.627 35.6533 11.25C36.1912 11.873 36.0217 12.8215 35.6883 14.722L35.1744 17.627" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M28.6318 10.625C28.6318 8.07229 27.5644 5.62413 25.6644 3.8191C23.7644 2.01406 21.1875 1 18.5005 1C15.8135 1 13.2365 2.01406 11.3365 3.8191C9.43654 5.62413 8.36914 8.07229 8.36914 10.625M21.5251 22.7735C23.7485 21.4943 25.6882 22.0088 26.8542 22.8313C27.3313 23.1673 27.5708 23.3352 27.7108 23.3352C27.8508 23.3352 28.0902 23.1673 28.5673 22.8313C29.7334 22.0088 31.673 21.4943 33.8964 22.7735C36.8142 24.4535 37.4737 29.9922 30.7465 34.6647C29.4626 35.5555 28.8234 36 27.7108 36C26.5982 36 25.959 35.5555 24.6769 34.6647C17.9479 29.9922 18.6073 24.4518 21.5251 22.7735Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="mobile-menu menu-hidden fixed inset-y-0 left-0 w-64 bg-white shadow-2xl md:hidden pt-20 px-6 z-50" id="mobile-menu">
+    <nav class="flex flex-col space-y-6">
+      <a href="index.html" class="nav-link text-xl hover:text-green-700 transition-colors py-2">Главная</a>
+      <a href="#nas" class="nav-link text-xl hover:text-green-700 transition-colors py-2">О нас</a>
+      <a href="#new" class="nav-link text-xl hover:text-green-700 transition-colors py-2">Новинки</a>
+      <a href="#populir" class="nav-link text-xl hover:text-green-700 transition-colors py-2">Популярное</a>
+      <a href="#otsov" class="nav-link text-xl hover:text-green-700 transition-colors py-2">Отзывы</a>
+      <a href="#katalog" class="nav-link text-xl hover:text-green-700 transition-colors py-2">Контакты</a>
+    </nav>
+  </div>
+
+  <div class="menu-overlay fixed inset-0 bg-black bg-opacity-50 hidden z-40" id="menu-overlay"></div>
 </header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuOverlay = document.getElementById('menu-overlay');
+  
+  function toggleMenu() {
+    mobileMenu.classList.toggle('menu-hidden');
+    menuOverlay.classList.toggle('hidden');
+    document.body.classList.toggle('overflow-hidden');
+  }
+  
+  menuToggle.addEventListener('click', toggleMenu);
+  menuOverlay.addEventListener('click', toggleMenu);
+  
+  // Закрытие меню при клике на ссылку
+  const menuLinks = mobileMenu.querySelectorAll('a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', toggleMenu);
+  });
+});
+</script>
+
+
     <section class="max-w-[1920px] ml-[162px] mr-[161px] mx-auto mt-[162px]    overflow-hidden">
         <!-- Заголовок и сортировка -->
         
@@ -231,9 +295,9 @@
                 </div>
             </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-15">
+                <div class="grid grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-[3,125vw]">
                     <!-- Товар 1 -->
-                <div class="w-[367px] h-[529px] relative">
+                <div class="w-[19,1vw] h-[27,5vw] relative">
   
   <!-- Контейнер для центрирования фото -->
   <div class="mrene flex justify-center items-center  relative">
@@ -603,141 +667,145 @@
         });
     </script>
 
-<section class="ml-[162px] mt-[82px] mr-[161px]">
-  <h1 class="text-[55px]  heading-font mb-[69px]">Контакты</h1>
+<section id="katalog" class="px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-16 2xl:px-0 2xl:py-0 2xl:ml-[162px] 2xl:mr-[161px] mt-8 md:mt-12 lg:mt-[82px]">
+  <h1 class="text-3xl md:text-4xl lg:text-5xl 2xl:text-[55px] heading-font mb-8 md:mb-12 lg:mb-[69px] text-center lg:text-left">
+    Контакты
+  </h1>
   
-  <div class="flex  items-start"> 
+  <div class="flex flex-col lg:flex-row items-start gap-8 md:gap-12 lg:gap-16"> 
     
-    
-    <div class="flex-1">
-      <div class="space-y-9"> 
+    <div class="flex-1 w-full">
+      <div class="space-y-6 md:space-y-8 lg:space-y-9"> 
         
-      
-        <div class="flex items-center gap-5">
+        <!-- Телефон -->
+        <div class="flex items-center gap-3 md:gap-4 lg:gap-5">
           <img 
-        src="src/svg/Vector (4).svg" 
-        alt="Иконка" 
-        class="w-[50px] h-[50px]"
-      >
-          <div>
-            <p class="text-2xl text-gray-700">+7 (777) 777-77-77</p>
-          </div>
-        </div>
-
-        <!-- Адрес -->
-        <div class="flex items-center gap-5">
-          <img 
-          src="src/svg/Vector (5).svg" 
-          alt="Иконка" 
-          class="w-[50px] h-[50px]"
-        >
-          <div>
-            <p class=" text-gray-700 text-2xl">г. Санкт-Петербург, наб. реки Фонтанки, д. 20</p>
-          </div>
-        </div>
-
-        <div class="flex items-center gap-5">
-            <img 
-            src="src/svg/Vector (6).svg" 
-            alt="Иконка" 
-            class="w-[50px] h-[50px]"
+            src="src/svg/Vector (4).svg" 
+            alt="Телефон" 
+            class="w-8 h-8 md:w-10 md:h-10 lg:w-[50px] lg:h-[50px]"
           >
           <div>
-            <p class="text-2xl text-gray-700">Задать вопрос: help_muscle.ru</p>
+            <p class="text-lg md:text-xl lg:text-2xl text-gray-700">+7 (777) 777-77-77</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 md:gap-4 lg:gap-5">
+          <img 
+            src="src/svg/Vector (5).svg" 
+            alt="Адрес" 
+            class="w-8 h-8 md:w-10 md:h-10 lg:w-[50px] lg:h-[50px] mt-1"
+          >
+          <div>
+            <p class="text-lg md:text-xl lg:text-2xl text-gray-700">г. Санкт-Петербург, наб. реки Фонтанки, д. 20</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3 md:gap-4 lg:gap-5">
+          <img 
+            src="src/svg/Vector (6).svg" 
+            alt="Email" 
+            class="w-8 h-8 md:w-10 md:h-10 lg:w-[50px] lg:h-[50px]"
+          >
+          <div>
+            <p class="text-lg md:text-xl lg:text-2xl text-gray-700">Задать вопрос: help_muscle.ru</p>
           </div>
         </div>
 
       </div>
 
-      <div class="flex gap-[62px] mt-8 pt-6">
+    
+      <div class="flex gap-6 md:gap-8 lg:gap-[62px] mt-6 md:mt-7 lg:mt-8 pt-4 md:pt-5 lg:pt-6">
         <a href="#" class="text-[#196950] hover:text-green-800 transition">
           <img 
-        src="src/svg/33.svg" 
-        alt="Иконка" 
-        class="w-[50px] h-[50px]"
-      >
-        </a>
-        
-        <a href="#" class="text-[#196950] hover:text-green-800 transition">
-            <img 
-          src="src/svg/Vector (3).svg" 
-          alt="Иконка" 
-          class="w-[50px] h-[50px]"
-        >
+            src="src/svg/33.svg" 
+            alt="Социальная сеть" 
+            class="w-8 h-8 md:w-10 md:h-10 lg:w-[50px] lg:h-[50px]"
+          >
         </a>
         
         <a href="#" class="text-[#196950] hover:text-green-800 transition">
           <img 
-        src="src/svg/Vector (2).svg" 
-        alt="Иконка" 
-        class="w-[50px] h-[50px]"
-      >
+            src="src/svg/Vector (3).svg" 
+            alt="Социальная сеть" 
+            class="w-8 h-8 md:w-10 md:h-10 lg:w-[50px] lg:h-[50px]"
+          >
+        </a>
+        
+        <a href="#" class="text-[#196950] hover:text-green-800 transition">
+          <img 
+            src="src/svg/Vector (2).svg" 
+            alt="Социальная сеть" 
+            class="w-8 h-8 md:w-10 md:h-10 lg:w-[50px] lg:h-[50px]"
+          >
         </a>
       </div>
     </div>
 
-
-    <div class="flex-1  mgrene">
-      <iframe class=" rounded-[30px] " src="https://yandex.ru/map-widget/v1/?um=constructor%3A33adac18ed2bab68dced24e2b8e8011b28f3c77a01bead313e8b9f068975f313&amp;source=constructor" width="870" height="310" frameborder="0"></iframe>
+    <div class="flex-1 w-full mgrene mt-6 lg:mt-0">
+      <iframe class="w-full h-[250px] md:h-[300px] lg:h-[310px] rounded-[32px] lg:rounded-[30px]" 
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A33adac18ed2bab68dced24e2b8e8011b28f3c77a01bead313e8b9f068975f313&amp;source=constructor" 
+              frameborder="0">
+      </iframe>
     </div>
+
   </div>
 </section>
 
-
-<section class="relative px-[162px]  pt-20 pb-8">
+<section class="relative px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-16 2xl:px-[162px] pt-12 md:pt-16 lg:pt-20 pb-6 md:pb-7 lg:pb-8">
     
-    <div class=" max-w-[1920px] flex gap-24">
+    <div class="max-w-[1920px] flex flex-col lg:flex-row gap-2 md:gap-12 lg:gap-24">
     
-    <div>
-    <ul class="space-y-3 text-xl">
-        <li><a href="index.html" class=" hover:text-gray-600 transition">О нас </a></li>
-        <li><a href="index.html#nas" class=" hover:text-gray-600 transition">Направления</a></li>
-        <li><a href="index.html#new" class=" hover:text-gray-600 transition">Тренеры</a></li>
-        <li><a href="index.html#populir" class=" hover:text-gray-600 transition">Абонементы</a></li>
-        <li><a href="index.html#otsov" class=" hover:text-gray-600 transition">Расписание занятий</a></li>
-        <li><a href="index.html#katalog" class= "hover:text-gray-600 transition">Контакты</a></li>
-
-    </ul>
+    <div class="w-full lg:w-auto">
+        <ul class="space-x-2 md:space-y-3 text-lg md:text-xl text-center lg:text-left">
+            <li><a href="index.html" class="hover:text-[#1e7b5e] transition">О нас</a></li>
+            <li><a href="index.html#nas" class="hover:text-[#1e7b5e] transition">Направления</a></li>
+            <li><a href="index.html#new" class="hover:text-[#1e7b5e] transition">Тренеры</a></li>
+            <li><a href="index.html#populir" class="hover:text-[#1e7b5e] transition">Абонементы</a></li>
+            <li><a href="index.html#otsov" class="hover:text-[#1e7b5e] transition">Расписание занятий</a></li>
+            <li><a href="index.html#katalog" class="hover:text-[#1e7b5e] transition">Контакты</a></li>
+        </ul>
     </div>
     
-    <div class="ml-auto">
-    <div class="space-y-3">
-        <p class="text-right leading-[1.8] text-xl">
-        +7 (777) 777-77-77<br>
-    <span class=" h-3 text-xl"></span> 
-        help_muscle.ru<br>
-    <span class=" h-3 text-xl"></span> 
-        г. Санкт-Петербург, наб. реки Фонтанки, д. 20
-    </p>
-        <div class="flex gap-10  justify-end mt-8 pt-10">
-        <a href="#" class="text-[#196950] hover:text-green-800 transition">
-            <img 
-            src="src/svg/33.svg" 
-            alt="Иконка" 
-            class="w-[40px] h-[40px]"
-        >
-        </a>
-        
-        <a href="#" class="text-[#196950] hover:text-green-800 transition">
-                <img 
-            src="src/svg/Vector (2).svg" 
-            alt="Иконка" 
-            class="w-[40px] h-[40px]"
-            >
-        </a>
-        
-        <a href="#" class="text-[#196950] hover:text-green-800 transition">
-                <img 
-                src="src/svg/Vector (3).svg" 
-                alt="Иконка" 
-                class="w-[40px] h-[40px]"
-            >
-        </a>
+    <div class=" lg:ml-auto lg:text-right">
+        <div class="space-x-2 md:space-y-3">
+            <p class="text-left lg:text-right leading-[1.6] md:leading-[1.8] text-lg md:text-xl">
+                +7 (777) 777-77-77<br>
+                <span class="hidden lg:inline">help_muscle.ru</span>
+                <span class="lg:hidden">help_muscle.ru</span>
+                <br>
+                г. Санкт-Петербург, наб. реки Фонтанки, д. 20
+            </p>
+            
+            <div class="flex gap-6 md:gap-8 lg:gap-10 justify-center lg:justify-end mt-6 md:mt-7 lg:mt-8 pt-6 md:pt-8 lg:pt-10">
+                <a href="#" class="text-[#196950] hover:text-green-800 transition">
+                    <img 
+                        src="src/svg/33.svg" 
+                        alt="Социальная сеть" 
+                        class="w-8 h-8 md:w-9 md:h-9 lg:w-[40px] lg:h-[40px]"
+                    >
+                </a>
+                
+                <a href="#" class="text-[#196950] hover:text-green-800 transition">
+                    <img 
+                        src="src/svg/Vector (2).svg" 
+                        alt="Социальная сеть" 
+                        class="w-8 h-8 md:w-9 md:h-9 lg:w-[40px] lg:h-[40px]"
+                    >
+                </a>
+                
+                <a href="#" class="text-[#196950] hover:text-green-800 transition">
+                    <img 
+                        src="src/svg/Vector (3).svg" 
+                        alt="Социальная сеть" 
+                        class="w-8 h-8 md:w-9 md:h-9 lg:w-[40px] lg:h-[40px]"
+                    >
+                </a>
+            </div>
         </div>
     </div>
     </div>
-</div>
 </section>
+
 
 
 </body>
