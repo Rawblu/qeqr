@@ -257,7 +257,7 @@ br {
     display: none !important;
 }
 
-/* Стили для точек-индикаторов */
+
 .owl-dots {
     margin-top: 71px;
     text-align: center;
@@ -266,7 +266,7 @@ br {
     width: 12px;
     height: 12px;
     margin: 0 6px;
-    background: #348D71 !important;
+    background: #348D71 ;
     display: block;
     border-radius: 50%;
     transition: all 0.3s ease;
@@ -365,24 +365,7 @@ br {
     }
 }
 
-@media (max-width: 480px) {
-    .section .flex-col.gap-4 img {
-        width: 100px !important;
-        height: 120px !important;
-    }
-    
-    .section img.w-\[580px\].h-\[858px\] {
-        height: 300px !important;
-    }
-    
-    .section h1.text-\[43px\] {
-        font-size: 24px !important;
-    }
-    
-    .section .text-\[26px\] {
-        font-size: 14px !important;
-    }
-}
+
 
 @media (max-width: 768px) {
   section.pt-\[270px\] {
