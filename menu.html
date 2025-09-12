@@ -110,549 +110,374 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 
-    <section class="max-w-[1920px] ml-[162px] mr-[161px] mx-auto mt-[162px]">
+    <section class=" ml-[8.437vw] mr-[8.437vw] mt-[15.43vw] md:mt-[8.43vw]  ">
         <!-- Заголовок и сортировка -->
         
-        
-        <!-- фильтр -->
-        <div class="flex flex-col md:flex-row text-xl">
-            <div class="w-[190px]   mt-12 ">
-                
-                <div class="filter-section mb-6">
-                    <div class="filter-title flex justify-between items-center mb-3">
-                        <span class="font-medium">Фасовка</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        <!-- фильтр и товары -->
+        <div class="flex flex-col lg:flex-row">
+            <!-- Фильтр -->
+            <div class="lg:w-1/6 mb-8 lg:mb-0 lg:pr-[5.885vw]">
+                <div class="bg-gray-50 p-4 rounded-lg lg:bg-transparent lg:p-0">
+                  <!-- сделать с права -->
+                    <button class="lg:hidden w-full py-3 px-4 bg-[#196950] text-white rounded-md flex justify-between items-center mb-4" id="filterToggle">
+                        <span>Фильтры</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
                         </svg>
-                    </div>
-                    <div class="space-y-2">
-                        <div class="flex items-center">
-                            <input type="checkbox" id="pack1" class="mr-2">
-                            <label for="pack1">1 000 мл</label>
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="pack2" class="mr-2">
-                            <label for="pack2">1 стик</label>
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="pack3" class="mr-2">
-                            <label for="pack3">100 капс</label>
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="pack4" class="mr-2">
-                            <label for="pack4">1000 г</label>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Фильтр по бренду -->
-                <div class="filter-section mb-6">
-                    <div class="filter-title flex justify-between items-center mb-3">
-                        <span class="font-medium">Бренд</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
-                    <div class="space-y-2">
-                        <div class="flex items-center">
-                            <input type="checkbox" id="brand1" class="mr-2">
-                            <label for="brand1">Optimum Nutrition</label>
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="brand2" class="mr-2">
-                            <label for="brand2">Dymatize</label>
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="brand3" class="mr-2">
-                            <label for="brand3">BSN</label>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Фильтр по целям -->
-                <div class="filter-section mb-6">
-                    <div class="filter-title flex justify-between items-center mb-3">
-                        <span class="font-medium">Цели</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
-                    <div class="space-y-2">
-                        <div class="flex items-center">
-                            <input type="checkbox" id="goal1" class="mr-2">
-                            <label for="goal1">Набор массы</label>
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="goal2" class="mr-2">
-                            <label for="goal2">Похудение</label>
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="goal3" class="mr-2">
-                            <label for="goal3">Восстановление</label>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Фильтр по объему -->
-                <div class="filter-section mb-6">
-                    <div class="filter-title flex justify-between items-center mb-3">
-                        <span class="font-medium">Объем, мл</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
-                    <div class="space-y-2">
-                        <div class="flex items-center">
-                            <input type="checkbox" id="volume1" class="mr-2">
-                            <label for="volume1">500 мл</label>
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="volume2" class="mr-2">
-                            <label for="volume2">1000 мл</label>
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="volume3" class="mr-2">
-                            <label for="volume3">1500 мл</label>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Фильтр по форме выпуска -->
-                <div class="filter-section mb-6">
-                    <div class="filter-title flex justify-between items-center mb-3">
-                        <span class="font-medium">Форма выпуска</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </div>
-                    <div class="space-y-2">
-                        <div class="flex items-center">
-                            <input type="checkbox" id="form1" class="mr-2">
-                            <label for="form1">Порошок</label>
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="form2" class="mr-2">
-                            <label for="form2">Капсулы</label>
-                        </div>
-                        <div class="flex items-center">
-                            <input type="checkbox" id="form3" class="mr-2">
-                            <label for="form3">Таблетки</label>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Фильтр по цене -->
-                <div class="filter-section mb-6">
-            <div class="filter-title flex justify-between items-center mb-3">
-                <span class="font-medium">Цена, ₽</span>
-            </div>
-            <div class="px-2">
-                
-                
-                <div class="flex justify-between items-center mt-4">
-                    <div class="border-[1.25px] border-black rounded-[4.6px] text-center text-xl w-[71px] h-[28px]">
-                        <span class="text-[16px]">500</span>
-                    </div>
-                    <span class="font-bold">-</span>
-                    <div class="border-[1.25px] border-black rounded-[4.6px] text-center text-xl w-[71px] h-[28px]">
-                        <span class="text-[16px]">2376</span>
-                    </div>
-                </div>
-                    <div class="relative mt-4">
-                        <div class="relative h-1 bg-black rounded">
-                        
-                                <div class="absolute h-1 bg-black rounded" style="left: 0%; width: 100%"></div>
+                    </button>
+                    
+                    <div class=" hidden lg:block" id="filterContent">
+                        <div class="filter-section mb-6">
+                            <div class="filter-title flex justify-between items-center mb-3 cursor-pointer">
+                                <span class="font-medium">Фасовка</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="filter-content space-y-2">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="pack1" class="mr-2">
+                                    <label for="pack1">1 000 мл</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="pack2" class="mr-2">
+                                    <label for="pack2">1 стик</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="pack3" class="mr-2">
+                                    <label for="pack3">100 капс</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="pack4" class="mr-2">
+                                    <label for="pack4">1000 г</label>
+                                </div>
+                            </div>
                         </div>
                         
-                        <div class="absolute top-1/2 transform -translate-y-1/2 w-3 h-3 bg-black rounded-full" style="left: 0%"></div>
-                        <div class="absolute top-1/2 transform -translate-y-1/2 w-3 h-3 bg-black rounded-full" style="left: 100%"></div>
-                </div>
-            </div>
-       
-        
-    
+                        <div class="filter-section mb-6">
+                            <div class="filter-title flex justify-between items-center mb-3 cursor-pointer">
+                                <span class="font-medium">Бренд</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="filter-content space-y-2">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="brand1" class="mr-2">
+                                    <label for="brand1">Optimum Nutrition</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="brand2" class="mr-2">
+                                    <label for="brand2">Dymatize</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="brand3" class="mr-2">
+                                    <label for="brand3">BSN</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section mb-6">
+                            <div class="filter-title flex justify-between items-center mb-3 cursor-pointer">
+                                <span class="font-medium">Цели</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="filter-content space-y-2">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="goal1" class="mr-2">
+                                    <label for="goal1">Набор массы</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="goal2" class="mr-2">
+                                    <label for="goal2">Похудение</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="goal3" class="mr-2">
+                                    <label for="goal3">Восстановление</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section mb-6">
+                            <div class="filter-title flex justify-between items-center mb-3 cursor-pointer">
+                                <span class="font-medium">Объем, мл</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="filter-content space-y-2">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="volume1" class="mr-2">
+                                    <label for="volume1">500 мл</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="volume2" class="mr-2">
+                                    <label for="volume2">1000 мл</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="volume3" class="mr-2">
+                                    <label for="volume3">1500 мл</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="filter-section mb-6">
+                            <div class="filter-title flex justify-between items-center mb-3 cursor-pointer">
+                                <span class="font-medium">Форма выпуска</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+                            <div class="filter-content space-y-2">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="form1" class="mr-2">
+                                    <label for="form1">Порошок</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="form2" class="mr-2">
+                                    <label for="form2">Капсулы</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="form3" class="mr-2">
+                                    <label for="form3">Таблетки</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-section mb-6">
+                            <div class="filter-title flex justify-between items-center mb-3">
+                                <span class="font-medium">Цена, ₽</span>
+                            </div>
+                            <div class="filter-content px-2">
+                                <div class="flex justify-between items-center mb-2">
+                                    <div class="border border-gray-300 rounded text-center w-16 py-1">
+                                        <span class="text-sm">500</span>
+                                    </div>
+                                    <span class="font-bold mx-2">-</span>
+                                    <div class="border border-gray-300 rounded text-center w-16 py-1">
+                                        <span class="text-sm">2376</span>
+                                    </div>
+                                </div>
+                                <div class="slider-container block justify-center  w-2/3  " style="height: 20px; position: relative; margin: 20px 0;">
+            <div class="slider-track" style="position: absolute; top: 50%; transform: translateY(-50%); width: 100%; height: 4px; background-color: #ddd; border-radius: 2px;"></div>
+            <div class="slider-range" style="position: absolute; top: 50%; transform: translateY(-50%); height: 4px; background-color: #000; border-radius: 2px; z-index: 1; left: 20%; width: 50%;"></div>
+            <div class="slider-thumb" style="position: absolute; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; background-color: #000; border-radius: 50%; cursor: pointer; z-index: 2; left: 20%;" id="thumbMin"></div>
+            <div class="slider-thumb" style="position: absolute; top: 50%; transform: translateY(-50%); width: 16px; height: 16px; background-color: #000; border-radius: 50%; cursor: pointer; z-index: 2; left: 70%;" id="thumbMax"></div>
+            <input type="range" min="0" max="100" value="0" id="inputMin" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; opacity: 0; cursor: pointer; z-index: 3;">
+            <input type="range" min="0" max="100" value="100" id="inputMax" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; opacity: 0; cursor: pointer; z-index: 3;">
+        </div>
+    </div>
 </div>
-                
+                        
+                        <div class="lg:hidden flex justify-between mt-6">
+                            <button class="px-6 py-2 border border-[#196950] rounded-xl">Сбросить</button>
+                            <button class="px-6 py-2 bg-[#196950] text-white rounded-md">Применить</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <!-- часть с товарами -->
-            <div class="ml-[144px]   ">
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+    const inputMin = document.getElementById('inputMin');
+    const inputMax = document.getElementById('inputMax');
+    const thumbMin = document.getElementById('thumbMin');
+    const thumbMax = document.getElementById('thumbMax');
+    const sliderRange = document.getElementById('sliderRange');
+    const minPriceValue = document.getElementById('minPriceValue');
+    const maxPriceValue = document.getElementById('maxPriceValue');
+    
+    // Минимальная и максимальная цена
+    const minPrice = 0;
+    const maxPrice = 5000;
+    
+    function updateSlider() {
+        // Получаем значения из inputs
+        const minVal = parseInt(inputMin.value);
+        const maxVal = parseInt(inputMax.value);
+        
+        // Обновляем позиции thumb'ов
+        thumbMin.style.left = minVal + '%';
+        thumbMax.style.left = maxVal + '%';
+        
+        // Обновляем диапазон между thumb'ами
+        const rangeElement = document.querySelector('.slider-range');
+        if (rangeElement) {
+            rangeElement.style.left = minVal + '%';
+            rangeElement.style.width = (maxVal - minVal) + '%';
+        }
+        
+        // Обновляем отображаемые значения цен
+        minPriceValue.textContent = Math.round(minPrice + (minVal / 100) * (maxPrice - minPrice));
+        maxPriceValue.textContent = Math.round(minPrice + (maxVal / 100) * (maxPrice - minPrice));
+    }
+    
+    // Обработчики событий для inputs
+    if (inputMin && inputMax) {
+        inputMin.addEventListener('input', function() {
+            if (parseInt(inputMin.value) > parseInt(inputMax.value)) {
+                inputMin.value = inputMax.value;
+            }
+            updateSlider();
+        });
+        
+        inputMax.addEventListener('input', function() {
+            if (parseInt(inputMax.value) < parseInt(inputMin.value)) {
+                inputMax.value = inputMin.value;
+            }
+            updateSlider();
+        });
+        
+        // Инициализация
+        updateSlider();
+    }
+});
+</script>
+            <!-- Товары -->
             <div class="">
-                <div class="flex justify-between items-center p-[45px]">
-                  <span class="font-medium text-[#636363] text-lg">Главная</span>
-                      <div class="flex items-center gap-2 ml-auto">
-                          <span class="font-medium text-[#636363] text-lg">По популярности</span>
-                          <div class="flex flex-1">
-                        <!--  вверх -->
-                      <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M3.62961 16.6085C3.83417 16.813 4.16583 16.813 4.37039 16.6085L7.70389 13.275C7.90845 13.0704 7.90845 12.7388 7.70389 12.5342C7.49933 12.3296 7.16767 12.3296 6.96311 12.5342L4 15.4973L1.03689 12.5342C0.832325 12.3296 0.500668 12.3296 0.296107 12.5342C0.0915468 12.7388 0.0915468 13.0704 0.296107 13.275L3.62961 16.6085ZM4 0H3.47619V16.2381H4H4.52381V0H4Z" fill="#636363"/>
-                      </svg>
-                        <!--  вниз -->
-                      <svg width="8" height="18" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.37039 0.629797C4.16583 0.425238 3.83417 0.425238 3.62961 0.629797L0.296107 3.9633C0.0915468 4.16786 0.0915468 4.49952 0.296107 4.70408C0.500668 4.90864 0.832325 4.90864 1.03689 4.70408L4 1.74097L6.96311 4.70408C7.16767 4.90864 7.49933 4.90864 7.70389 4.70408C7.90845 4.49952 7.90845 4.16786 7.70389 3.9633L4.37039 0.629797ZM4 17.2383H4.52381L4.52381 1.00019H4H3.47619L3.47619 17.2383H4Z" fill="#636363"/>
-                      </svg>
+                <div class="flex flex-col sm:flex-row justify-between items-center mb-6  border-gray-200">
+                    <span class="font-medium text-gray-600 text-base mb-2 sm:mb-0">Главная</span>
+                    <div class="flex items-center gap-2">
+                        <span class="font-medium text-gray-600 text-base">По популярности</span>
+                        <div class="flex">
+                            <svg width="16" height="16" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.62961 16.6085C3.83417 16.813 4.16583 16.813 4.37039 16.6085L7.70389 13.275C7.90845 13.0704 7.90845 12.7388 7.70389 12.5342C7.49933 12.3296 7.16767 12.3296 6.96311 12.5342L4 15.4973L1.03689 12.5342C0.832325 12.3296 0.500668 12.3296 0.296107 12.5342C0.0915468 12.7388 0.0915468 13.0704 0.296107 13.275L3.62961 16.6085ZM4 0H3.47619V16.2381H4H4.52381V0H4Z" fill="#636363"/>
+                            </svg>
+                            <svg width="16" height="16" viewBox="0 0 8 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.37039 0.629797C4.16583 0.425238 3.83417 0.425238 3.62961 0.629797L0.296107 3.9633C0.0915468 4.16786 0.0915468 4.49952 0.296107 4.70408C0.500668 4.90864 0.832325 4.90864 1.03689 4.70408L4 1.74097L6.96311 4.70408C7.16767 4.90864 7.49933 4.90864 7.70389 4.70408C7.90845 4.49952 7.90845 4.16786 7.70389 3.9633L4.37039 0.629797ZM4 17.2383H4.52381L4.52381 1.00019H4H3.47619L3.47619 17.2383H4Z" fill="#636363"/>
+                            </svg>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-                <div class="grid grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-[3.18vw]">
+                <div class="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-[3.17vw]">
                     <!-- Товар 1 -->
-                  
-                <div class=" ">
-  <div class="mrene flex justify-center items-center  relative">
-    <img src="src/img/bb74252c0fefc2927e7c413116a3646d6deb90c2.png" alt="Протеин сывороточный" class="w-[10.42vw] h-[13.2vw] rounded-lg">
-    
-    <!-- Иконка -->
-    <div class="absolute top-2 right-2 p-5">
-      <img src="src/svg/Vector (1).svg" alt="Иконка" class="w-[1.354vw] h-[1.354vw]">
-    </div>
-  </div>
-
-  <p class="text-[22px] my-2 ">
-    Протеин сывороточный
-  </p>
-  <p class="text-[22px] font-bold">
-    2 342 ₽
-  </p>
-
-  <div class="  mt-2 green  text-xl grid place-items-center">
-      <a href="header.html">
-    В корзину
-      </a>
-    </div>
-  
-</div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200 flex flex-col h-full">
+                    <div class="mrene flex justify-center items-center relative p-4 min-h-[200px]">
+                        <img src="src/img/bb74252c0fefc2927e7c413116a3646d6deb90c2.png" alt="Протеин сывороточный" class="w-full max-w-[120px] md:max-w-[150px] h-auto object-contain">
+                        <div class="absolute top-3 right-3">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 35 35' fill='none'%3E%3Cpath d='M4.12632 17.0656C3.39796 16.2532 2.82089 15.286 2.42872 14.2206C2.03656 13.1552 1.83715 12.0128 1.84211 10.86C1.84211 8.52834 2.66694 6.29222 4.13515 4.64352C5.60336 2.99482 7.59469 2.06859 9.67105 2.06859C12.5816 2.06859 15.1237 3.84755 16.4684 6.4953H18.5316C19.2152 5.14879 20.2044 4.02977 21.3984 3.25217C22.5925 2.47458 23.9487 2.06619 25.3289 2.06859C27.4053 2.06859 29.3966 2.99482 30.8648 4.64352C32.3331 6.29222 33.1579 8.52834 33.1579 10.86C33.1579 13.2802 32.2368 15.5142 30.8737 17.0656L17.5 32.0627L4.12632 17.0656ZM32.1632 18.5343C33.9132 16.5485 35 13.8594 35 10.86C35 7.97973 33.9811 5.21746 32.1674 3.18083C30.3537 1.1442 27.8939 3.73416e-05 25.3289 3.73416e-05C22.1053 3.73416e-05 19.25 1.75831 17.5 4.4888C16.6068 3.09563 15.4306 1.96169 14.069 1.18103C12.7075 0.400383 11.1998 -0.00447699 9.67105 3.73416e-05C7.10613 3.73416e-05 4.64626 1.1442 2.83259 3.18083C1.01891 5.21746 0 7.97973 0 10.86C0 13.8594 1.08684 16.5485 2.83684 18.5343L17.5 35L32.1632 18.5343Z' fill='%23196950'/%3E%3C/svg%3E" alt="Иконка" class="w-5 h-5 md:w-6 md:h-6">
+                        </div>
+                    </div>
+                    <div class="p-3 md:p-4 flex flex-col flex-grow">
+                        <p class="text-sm md:text-base my-1 line-clamp-2 min-h-[40px] md:min-h-[48px] overflow-hidden">
+                            Протеин сывороточный
+                        </p>
+                        <p class="text-base md:text-lg font-bold mt-auto mb-2">
+                            2 342 ₽
+                        </p>
+                        <div class="green text-center py-2 cursor-pointer text-sm md:text-base">
+                            В корзину
+                        </div>
+                    </div>
+                </div>
                     
                     <!-- Товар 2 -->
-    <div class="">
-  
-  <!-- Контейнер для центрирования фото -->
-  <div class="mrene flex justify-center items-center  relative">
-    <img src="src/img/099590c81e34a0bb551c9acf7b4b8111b058fd0b.png" alt="Протеин сывороточный" class="w-[100px] h-[255px] rounded-lg">
-    
-    <!-- Иконка -->
-    <div class="absolute top-2 right-2 p-5">
-      <svg width="26" height="26" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="active:fill-[#196950] transition-colors duration-150 cursor-pointer">
-        
-<path d="M4.12632 17.0656C3.39796 16.2532 2.82089 15.286 2.42872 14.2206C2.03656 13.1552 1.83715 12.0128 1.84211 10.86C1.84211 8.52834 2.66694 6.29222 4.13515 4.64352C5.60336 2.99482 7.59469 2.06859 9.67105 2.06859C12.5816 2.06859 15.1237 3.84755 16.4684 6.4953H18.5316C19.2152 5.14879 20.2044 4.02977 21.3984 3.25217C22.5925 2.47458 23.9487 2.06619 25.3289 2.06859C27.4053 2.06859 29.3966 2.99482 30.8648 4.64352C32.3331 6.29222 33.1579 8.52834 33.1579 10.86C33.1579 13.2802 32.2368 15.5142 30.8737 17.0656L17.5 32.0627L4.12632 17.0656ZM32.1632 18.5343C33.9132 16.5485 35 13.8594 35 10.86C35 7.97973 33.9811 5.21746 32.1674 3.18083C30.3537 1.1442 27.8939 3.73416e-05 25.3289 3.73416e-05C22.1053 3.73416e-05 19.25 1.75831 17.5 4.4888C16.6068 3.09563 15.4306 1.96169 14.069 1.18103C12.7075 0.400383 11.1998 -0.00447699 9.67105 3.73416e-05C7.10613 3.73416e-05 4.64626 1.1442 2.83259 3.18083C1.01891 5.21746 0 7.97973 0 10.86C0 13.8594 1.08684 16.5485 2.83684 18.5343L17.5 35L32.1632 18.5343Z" fill="#196950"/>
-</svg>
-    </div>
-  </div>
-
-  <p class="text-[22px] my-2 ">
-    Шейкер металлический
-  </p>
-  <p class="text-[22px] font-bold">
-    871 ₽
-  </p>
-  
-  <div class="  mt-2 green  text-xl grid place-items-center">
-      <a href="header.html">
-    В корзину
-      </a>
-    </div>
-</div>
+                    <!-- Товар 1 -->
+                    <div class="bg-white rounded-lg   ">
+                        <div class=" mrene grid place-items-center relative mx-auto">
+                            <img src="src/img/bb74252c0fefc2927e7c413116a3646d6deb90c2.png" alt="Протеин сывороточный" class="w-full max-w-[9.375vw] h-auto  object-contain inline-block align-middle">
+                            <div class="absolute top-[1.25vw]  right-[1.25vw]">
+                                <img width="1.354vw" height="1.354vw" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'  viewBox='0 0 35 35' fill='none'%3E%3Cpath d='M4.12632 17.0656C3.39796 16.2532 2.82089 15.286 2.42872 14.2206C2.03656 13.1552 1.83715 12.0128 1.84211 10.86C1.84211 8.52834 2.66694 6.29222 4.13515 4.64352C5.60336 2.99482 7.59469 2.06859 9.67105 2.06859C12.5816 2.06859 15.1237 3.84755 16.4684 6.4953H18.5316C19.2152 5.14879 20.2044 4.02977 21.3984 3.25217C22.5925 2.47458 23.9487 2.06619 25.3289 2.06859C27.4053 2.06859 29.3966 2.99482 30.8648 4.64352C32.3331 6.29222 33.1579 8.52834 33.1579 10.86C33.1579 13.2802 32.2368 15.5142 30.8737 17.0656L17.5 32.0627L4.12632 17.0656ZM32.1632 18.5343C33.9132 16.5485 35 13.8594 35 10.86C35 7.97973 33.9811 5.21746 32.1674 3.18083C30.3537 1.1442 27.8939 3.73416e-05 25.3289 3.73416e-05C22.1053 3.73416e-05 19.25 1.75831 17.5 4.4888C16.6068 3.09563 15.4306 1.96169 14.069 1.18103C12.7075 0.400383 11.1998 -0.00447699 9.67105 3.73416e-05C7.10613 3.73416e-05 4.64626 1.1442 2.83259 3.18083C1.01891 5.21746 0 7.97973 0 10.86C0 13.8594 1.08684 16.5485 2.83684 18.5343L17.5 35L32.1632 18.5343Z' fill='%23196950'/%3E%3C/svg%3E" alt="Иконка" class="w-6 h-6">
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-base md:text-lg my-1 line-clamp-2 h-12 overflow-hidden">
+                                Протеин сывороточный
+                            </p>
+                            <p class="text-lg md:text-xl font-bold">
+                                2 342 ₽
+                            </p>
+                            <div class="mt-3 md:mt-4 green text-base md:text-lg lg:text-xl grid place-items-center mx-auto lg:mx-0">
+                              <a href="header.html" class="py-2">
+                                  В корзину
+                              </a>
+                          </div>
+                        </div>
+                    </div>
                     
-                    <!-- Товар 3 -->
-    <div class="">
-  
-  <!-- Контейнер для центрирования фото -->
-  <div class="mrene flex justify-center items-center  relative">
-    <img src="src/img/030d0e191cac70abc059d0a026e7e8c271837ff0.png" alt="Протеин сывороточный" class="w-[194px] h-[265px] ">
-    
-    <!-- Иконка -->
-    <div class="absolute top-2 right-2 p-5">
-      <img src="src/svg/Vector (1).svg" alt="Иконка" class="w-[26px] h-[26px]">
-    </div>
-  </div>
-
-  <p class="text-[22px] my-2 ">
-    Витамины Omega 3 
-  </p>
-  <p class="text-[22px] font-bold">
-    1012 ₽
-  </p>
-  
-  <div class="  mt-2 green  text-xl grid place-items-center">
-      <a href="header.html">
-    В корзину
-      </a>
-    </div>
-</div>
-
-  <div class="">
-  
-  <!-- Контейнер для центрирования фото -->
-  <div class="mrene flex justify-center items-center  relative">
-    <img src="src/img/06852c4335d77e7ab6d0a091f18f18fceca76583.png" alt="Протеин сывороточный" class="w-[200px] h-[255px] rounded-lg">
-    
-    <!-- Иконка -->
-    <div class="absolute top-2 right-2 p-5">
-      <img 
-        src="src/svg/Vector (1).svg" 
-        alt="Иконка" 
-        class="w-[26px] h-[26px]"
-      >
-    </div>
-  </div>
-
-  <p class="text-[22px] my-2 ">
-    Pre-workout, 60 капсул
-  </p>
-  <p class="text-[22px] font-bold">
-    477 ₽
-  </p>
-  
-  <div class="  mt-2 green  text-xl grid place-items-center">
-      <a href="header.html">
-    В корзину
-      </a>
-    </div>
-</div>
+                    <!-- Товар 1 -->
+                    <div class="bg-white rounded-lg   ">
+                        <div class=" mrene flex justify-center items-center relative p-4">
+                            <img src="src/img/bb74252c0fefc2927e7c413116a3646d6deb90c2.png" alt="Протеин сывороточный" class="w-full max-w-[180px] h-auto aspect-[3/4] object-contain">
+                            <div class="absolute top-3 right-3">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 35 35' fill='none'%3E%3Cpath d='M4.12632 17.0656C3.39796 16.2532 2.82089 15.286 2.42872 14.2206C2.03656 13.1552 1.83715 12.0128 1.84211 10.86C1.84211 8.52834 2.66694 6.29222 4.13515 4.64352C5.60336 2.99482 7.59469 2.06859 9.67105 2.06859C12.5816 2.06859 15.1237 3.84755 16.4684 6.4953H18.5316C19.2152 5.14879 20.2044 4.02977 21.3984 3.25217C22.5925 2.47458 23.9487 2.06619 25.3289 2.06859C27.4053 2.06859 29.3966 2.99482 30.8648 4.64352C32.3331 6.29222 33.1579 8.52834 33.1579 10.86C33.1579 13.2802 32.2368 15.5142 30.8737 17.0656L17.5 32.0627L4.12632 17.0656ZM32.1632 18.5343C33.9132 16.5485 35 13.8594 35 10.86C35 7.97973 33.9811 5.21746 32.1674 3.18083C30.3537 1.1442 27.8939 3.73416e-05 25.3289 3.73416e-05C22.1053 3.73416e-05 19.25 1.75831 17.5 4.4888C16.6068 3.09563 15.4306 1.96169 14.069 1.18103C12.7075 0.400383 11.1998 -0.00447699 9.67105 3.73416e-05C7.10613 3.73416e-05 4.64626 1.1442 2.83259 3.18083C1.01891 5.21746 0 7.97973 0 10.86C0 13.8594 1.08684 16.5485 2.83684 18.5343L17.5 35L32.1632 18.5343Z' fill='%23196950'/%3E%3C/svg%3E" alt="Иконка" class="w-6 h-6">
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-base md:text-lg my-1 line-clamp-2 h-12 overflow-hidden">
+                                Протеин сывороточный
+                            </p>
+                            <p class="text-lg md:text-xl font-bold">
+                                2 342 ₽
+                            </p>
+                            <div class="green text-center py-2 cursor-pointer text-sm md:text-base">
+                            В корзину
+                        </div>
+                        </div>
+                    </div>
 
 
-
-
-<div class="">
-  
-  <!-- Контейнер для центрирования фото -->
-  <div class="mrene flex justify-center items-center  relative">
-    <img src="src/img/5e7b3d940457b2ab770c469bfc70034a80f6513f.png" alt="Протеин сывороточный" class="w-[197px] h-[212px] rounded-lg">
-    
-    <!-- Иконка -->
-    <div class="absolute top-2 right-2 p-5">
-      <img src="src/svg/Vector (1).svg" alt="Иконка" class="w-[26px] h-[26px]">
-    </div>
-  </div>
-
-  <p class="text-[22px] my-2 ">
-    Коллаген
-  </p>
-  <p class="text-[22px] font-bold">
-    800 ₽
-  </p>
-  
-  <div class="  mt-2 green  text-xl grid place-items-center">
-      <a href="header.html">
-    В корзину
-      </a>
-    </div>
-</div>
-<!-- Товар 5 -->
-        <div class="">
-  
-  <!-- Контейнер для центрирования фото -->
-  <div class="mrene flex justify-center items-center  relative">
-    <img src="src/img/84c6d1011462d8db961c874d46955cca4c7afe19.png" alt="Протеин сывороточный" class="w-[174px] h-[262px] rounded-lg">
-    
-    <!-- Иконка -->
-    <div class="absolute top-2 right-2 p-5">
-      <img 
-        src="src/svg/Vector (1).svg" 
-        alt="Иконка" 
-        class="w-[26px] h-[26px]"
-      >
-    </div>
-  </div>
-
-  <p class="text-[22px] my-2 ">
-    Протеин сывороточный
-  </p>
-  <p class="text-[22px] font-bold">
-    1184 ₽
-  </p>
-  
-  <div class="  mt-2 green  text-xl grid place-items-center">
-      <a href="header.html">
-    В корзину
-      </a>
-    </div>
-</div>
-                    
-                    <!-- Товар 6 -->
-                     <div class="">
-  
-  <!-- Контейнер для центрирования фото -->
-  <div class="mrene flex justify-center items-center  relative">
-    <img src="src/img/d9a170385fc7aa1c1f979208a010b9cdd3c0d07a.png" alt="Протеин сывороточный" class="w-[223px] h-[265px] rounded-lg">
-    
-    <!-- Иконка -->
-    <div class="absolute top-2 right-2 p-5">
-      <img src="src/svg/Vector (1).svg"  alt="Иконка" class="w-[26px] h-[26px]">
-    </div>
-  </div>
-
-  <p class="text-[22px] my-2 ">
-    Шейкер
-  </p>
-  <p class="text-[22px] font-bold">
-    483 ₽
-  </p>
-  
-  <div class="  mt-2 green  text-xl grid place-items-center">
-      <a href="header.html">
-    В корзину
-      </a>
-    </div>
-</div>
-
-<div class="">
-  
-  <!-- Контейнер для центрирования фото -->
-  <div class="mrene flex justify-center items-center  relative">
-    <img src="src/img/73b7062f95f96427743b64198a6ce8267cd025e7.png" alt="Протеин сывороточный" class="w-[200px] h-[255px] rounded-lg rotate-6">
-    
-    <!-- Иконка -->
-    <div class="absolute top-2 right-2 p-5">
-      <img  src="src/svg/Vector (1).svg" alt="Иконка"  class="w-[26px] h-[26px]">
-    </div>
-  </div>
-
-  <p class="text-[22px] my-2 ">
-    Биотин 5000
-  </p>
-  <p class="text-[22px] font-bold">
-    477 ₽
-  </p>
-  
-  <div class="  mt-2 green  text-xl grid place-items-center">
-      <a href="header.html">
-    В корзину
-      </a>
-    </div>
-</div>
-
-
-<div class="">
-  
-  <!-- Контейнер для центрирования фото -->
-  <div class="mrene flex justify-center items-center  relative">
-    <img src="src/img/1fa1d5fedd57a5bb169d9741661b6a9930478677.png" alt="Протеин сывороточный" class="w-[213px] h-[255px] rounded-lg mr-5">
-    
-    <!-- Иконка -->
-    <div class="absolute top-2 right-2 p-5">
-      <img 
-        src="src/svg/Vector (1).svg" 
-        alt="Иконка" 
-        class="w-[26px] h-[26px]"
-      >
-    </div>
-  </div>
-
-  <p class="text-[22px] my-2 ">
-    Шейкер 600 мл
-  </p>
-  <p class="text-[22px] font-bold">
-    297 ₽
-  </p>
-  
-  <div class="  mt-2 green  text-xl grid place-items-center">
-      <a href="header.html">
-    В корзину
-      </a>
-    </div>
-</div>
-                    
-<!-- Товар 8 -->
-<div class="">
-  
-  <!-- Контейнер для центрирования фото -->
-  <div class="mrene flex justify-center items-center  relative">
-    <img src="src/img/5d1d8177008a4bc0c698a9c142cc8bc9275c8cd5.png" alt="Протеин сывороточный" class="w-[151px] h-[250px] rounded-lg -rotate-6">
-    
-    <!-- Иконка -->
-    <div class="absolute top-2 right-2 p-5">
-      <img 
-        src="src/svg/Vector (1).svg" 
-        alt="Иконка" 
-        class="w-[26px] h-[26px]"
-      >
-    </div>
-  </div>
-
-  <p class="text-[22px] my-2 ">
-    Витамин D3
-  </p>
-  
-  <p class="text-[22px] font-bold">
-    871 ₽
-  </p>
-  
-  <div class="  mt-2 green  text-xl grid place-items-center">
-      <a href="header.html">
-    В корзину
-      </a>
-    </div>
-</div>
-                    
-                    <!-- Товар 9 -->
-                     <div class="">
-  
-  <!-- Контейнер для центрирования фото -->
-  <div class="mrene flex justify-center items-center  relative">
-    <img src="src/img/808790007358843c1558fb718fa12fc3109d5a72.png" alt="Протеин сывороточный" class="w-[254px] h-[207px] rounded-lg">
-    
-    <!-- Иконка -->
-    <div class="absolute top-2 right-2 p-5">
-      <img 
-        src="src/svg/Vector (1).svg" 
-        alt="Иконка" 
-        class="w-[26px] h-[26px]"
-      >
-    </div>
-  </div>
-
-  <p class="text-[22px] my-2 ">
-    ВСАА  Аминокомлпекс
-  </p>
-  <p class="text-[22px] font-bold">
-    208 ₽
-  </p>
-  
-  <div class="  mt-2 green  text-xl grid place-items-center">
-      <a href="header.html">
-    В корзину
-      </a>
-    </div>
-</div>
-
- <div class="">
-  
-  <!-- Контейнер для центрирования фото -->
-  <div class="mrene flex justify-center items-center  relative">
-    <img src="src/img/030d0e191cac70abc059d0a026e7e8c271837ff0.png" alt="Протеин сывороточный" class="w-[200px] h-[255px] rounded-lg mr-5">
-    
-    <!-- Иконка -->
-    <div class="absolute top-2 right-2 p-5">
-      <img src="src/svg/Vector (1).svg" alt="Иконка" class="w-[26px] h-[26px]">
-    </div>
-  </div>
-
-  <p class="text-[22px] my-2 ">
-    Протеин сывороточный
-  </p>
-  <p class="text-[22px] font-bold">
-    1973 ₽
-  </p>
-  
-  <div class="  mt-2 green  text-xl grid place-items-center">
-      <a href="header.html">
-    В корзину
-      </a>
-    </div>
-</div>
+<!-- Товар 1 -->
+                    <div class="bg-white rounded-lg   ">
+                        <div class=" mrene flex justify-center items-center relative p-4">
+                            <img src="src/img/bb74252c0fefc2927e7c413116a3646d6deb90c2.png" alt="Протеин сывороточный" class="w-full max-w-[180px] h-auto aspect-[3/4] object-contain">
+                            <div class="absolute top-3 right-3">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 35 35' fill='none'%3E%3Cpath d='M4.12632 17.0656C3.39796 16.2532 2.82089 15.286 2.42872 14.2206C2.03656 13.1552 1.83715 12.0128 1.84211 10.86C1.84211 8.52834 2.66694 6.29222 4.13515 4.64352C5.60336 2.99482 7.59469 2.06859 9.67105 2.06859C12.5816 2.06859 15.1237 3.84755 16.4684 6.4953H18.5316C19.2152 5.14879 20.2044 4.02977 21.3984 3.25217C22.5925 2.47458 23.9487 2.06619 25.3289 2.06859C27.4053 2.06859 29.3966 2.99482 30.8648 4.64352C32.3331 6.29222 33.1579 8.52834 33.1579 10.86C33.1579 13.2802 32.2368 15.5142 30.8737 17.0656L17.5 32.0627L4.12632 17.0656ZM32.1632 18.5343C33.9132 16.5485 35 13.8594 35 10.86C35 7.97973 33.9811 5.21746 32.1674 3.18083C30.3537 1.1442 27.8939 3.73416e-05 25.3289 3.73416e-05C22.1053 3.73416e-05 19.25 1.75831 17.5 4.4888C16.6068 3.09563 15.4306 1.96169 14.069 1.18103C12.7075 0.400383 11.1998 -0.00447699 9.67105 3.73416e-05C7.10613 3.73416e-05 4.64626 1.1442 2.83259 3.18083C1.01891 5.21746 0 7.97973 0 10.86C0 13.8594 1.08684 16.5485 2.83684 18.5343L17.5 35L32.1632 18.5343Z' fill='%23196950'/%3E%3C/svg%3E" alt="Иконка" class="w-6 h-6">
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <p class="text-base md:text-lg my-1 line-clamp-2 h-12 overflow-hidden">
+                                Протеин сывороточный
+                            </p>
+                            <p class="text-lg md:text-xl font-bold">
+                                2 342 ₽
+                            </p>
+                            <div class="green text-center py-2 cursor-pointer text-sm md:text-base">
+                            В корзину
+                        </div>
+                        </div>
+                    </div>
 
                 </div>
+                
+                <div class="pt-8 pb-12">
+                    <p class="text-center text-lg underline cursor-pointer">Показать еще</p>
+                </div>
             </div>
-   
         </div>
-        
     </section>
-    <div class="pt-[3vw]">
-      <a class="cursor-pointer ">
-    <p class="text-center text-xl underline">Показать еще</p>
-    </a>
-    </div>
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterToggle = document.getElementById('filterToggle');
+            const filterContent = document.getElementById('filterContent');
+            
+            if (filterToggle && filterContent) {
+                filterToggle.addEventListener('click', function() {
+                    filterContent.classList.toggle('hidden');
+                });
+            }
+            
+            // Активация фильтров на мобильных
+            if (window.innerWidth < 1024) {
+                document.querySelectorAll('.filter-title').forEach(title => {
+                    title.addEventListener('click', function() {
+                        this.parentElement.classList.toggle('active');
+                    });
+                });
+            }
+            
+            // Слайдер цены
+            const priceRange = document.getElementById('priceRange');
+            if (priceRange) {
+                priceRange.addEventListener('input', function() {
+                    // Логика обновления цены
+                });
+            }
+        });
+    </script>
 
     
 

@@ -50,7 +50,7 @@
     }
     @media (max-width: 768px) {
     .green {
-        width: 150px;
+        width: 110px;
         border-radius: 16px;
         font-size: 16px;
         }
@@ -114,8 +114,14 @@ br {
     .mrene{
         border-radius: 38px;
         border: 3.77px #196950  solid;
-        width: 277px;
-        height: 287px;
+        width: 14.4vw;
+        height: 14.4vw;
+    }
+    @media (max-width: 768px) {
+    .mrene {
+        width: 280px;
+        height: auto;
+    }
     }
     @media (max-width: 768px) {
     .mgrene {
@@ -196,6 +202,7 @@ br {
         max-width:885px;
         height: auto;
     }
+    
 
     .nofullgrene{
         border-radius: 50px;
