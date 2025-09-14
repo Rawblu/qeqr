@@ -119,7 +119,8 @@ br {
     }
     @media (max-width: 768px) {
     .mrene {
-        width: 280px;
+        aspect-ratio: 1/1;
+        width: auto;
         height: auto;
     }
     }
