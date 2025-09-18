@@ -41,7 +41,8 @@
     
     
     .green {
-        width: 216px;
+        max-width: 216px;
+        width: auto;
         height: 43.4px;
         border-radius: 33.41px;
         border: 1.11px;
@@ -50,7 +51,6 @@
     }
     @media (max-width: 768px) {
     .green {
-        width: 110px;
         border-radius: 16px;
         font-size: 16px;
         }
@@ -118,7 +118,7 @@ br {
         width: 14.4vw;
         height: 14.4vw;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
     .mrene {
         aspect-ratio: 1/1;
         width: auto;
@@ -142,8 +142,8 @@ br {
     .fgrene{
         border-radius: 50px;
         border: 5px #196950  solid;
-        width: 790px;
-        height: 381px;
+        max-width: 790px;
+        max-height: 381px;
     }
     @media (max-width: 768px) {
     .nofullgrene,
@@ -155,12 +155,11 @@ br {
     }
     
     .fgrene {
-        width: 100%;
-        max-width: 350px;
+        
+        max-width: 380px;
         height: auto;
         min-height: 300px;
-        flex-direction: column;
-        margin: 0 auto;
+        max-height: 581px;
     }
     
     .ggreen {
@@ -205,15 +204,17 @@ br {
     .nofullgrene{
         border-radius: 50px;
         border: 5px #196950  solid;
-        width: 368px;
+        max-width:368px;
         max-height: 381px;
+        aspect-ratio: 1/1;
     }
     .fullgrene{
         border-radius: 50px;
         background-color: #196950;
         border: 5px #196950  solid;
-        width: 368px;
-        height: 381px;
+        max-width:368px;
+        max-height: 381px;
+        aspect-ratio: 1/1;
     }
     @media (max-width: 768px) {
     .nofullgrene,
@@ -237,6 +238,10 @@ br {
         font-size: 18px;
     }
 }
+
+    .a5 {
+        font-size: clamp(1.5rem, 2.5vw, 2.1875rem);
+        }
         .a4 {
         font-size: clamp(0.875rem, 3.5vw, 1.25rem);
         }
