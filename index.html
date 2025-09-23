@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <p class="a2 mt-6 md:mt-8 lg:mt-[1.8vw] h-auto  w-full xl:w-[60vw] pl-0 md:pl-4 mx-auto text-justify">
         Мы предлагаем широкий ассортимент спортивного питания, созданного для достижения ваших фитнес-целей. Наша продукция включает протеины, аминокислоты, витамины и энергетические добавки, которые помогут вам повысить выносливость, ускорить восстановление и улучшить результаты тренировок. 
       </p>
-      <div class=" mt-6 md:mt-8 lg:mt-[2vw] green text-lg md:text-xl grid place-items-center mx-auto md:ml-4">
+      <div class=" mt-6 md:mt-8 lg:mt-[2vw] pushbutton text-lg md:text-xl grid place-items-center mx-auto md:ml-4 hover:bg-[#1e7b5e] transition-colors duration-300 ease-in ">
         <a href="menu.html">
           Каталог
         </a>
@@ -133,8 +133,41 @@ document.addEventListener('DOMContentLoaded', function() {
     О нас
   </h1>
   <div class="flex flex-col lg:flex-row  gap-[3.854vw] mt-6 md:mt-8 lg:mt-[38px]">
-    <div class="section w-full  lg:w-[33vw] h-[50vw] sm:h-[45vw] md:h-[40vw] lg:h-[29vw] order-1  mx-auto">
+    <div class="section w-full lg:w-[33vw] h-[50vw] sm:h-[45vw] md:h-[40vw] lg:h-[29vw] order-1 mx-auto rounded-[39.77px] overflow-hidden relative">
+    <iframe 
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/C-CYwNz3z8w?mute=1&controls=0"
+        frameborder="0"
+        allowfullscreen
+        id="videoIframe"
+    ></iframe>
+    
+    <div id="startIcon" class="absolute inset-0 flex items-center justify-center bg-black/20 cursor-pointer">
+        <div class="bg-white/20 rounded-full p-4 hover:bg-white/30 transition-all backdrop-blur-sm">
+            <svg class="w-16 h-16 md:w-20 md:h-20 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+        </div>
     </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const startIcon = document.getElementById('startIcon');
+        const videoIframe = document.getElementById('videoIframe');
+        
+        startIcon.addEventListener('click', function() {
+            // Скрываем иконку
+            startIcon.style.display = 'none';
+            
+            // Запускаем видео (добавляем autoplay параметр)
+            const currentSrc = videoIframe.src;
+            if (!currentSrc.includes('autoplay=1')) {
+                videoIframe.src = currentSrc + (currentSrc.includes('?') ? '&' : '?') + 'autoplay=1';
+            }
+        });
+    });
+</script>
 
     <p class="w-full text-justify   lg:w-[906px] h-auto lg:h-[429px] a2 py-4 md:py-6 lg:py-[44px] order-1 lg:order-2">
       Мы — команда энтузиастов, стремящихся помочь вам достичь фитнес-целей с помощью качественного спортивного питания. В нашем ассортименте — протеиновые порошки, аминокислоты, витамины и энергетические добавки, разработанные на основе современных научных исследований.
@@ -154,8 +187,8 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="grid grid-cols-1 md:grid-cols-3  lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 lg:gap-[43px] mt-8 md:mt-12 lg:mt-[63px] justify-center">
         
         <!-- Карточка 1 -->
-        <div class="w-full max-w-[367px] mx-auto h-auto lg:h-[529px] relative">
-          <div class="grene text-center relative mx-auto">
+        <div class=" w-full max-w-[367px] mx-auto h-auto lg:h-[529px] relative">
+          <div class="bloc text-center relative mx-auto">
                 <img 
                     src="src/img/bb74252c0fefc2927e7c413116a3646d6deb90c2.png" 
                     alt="Протеин сывороточный" 
@@ -179,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 2 342 ₽
             </p>
             
-            <div class="mt-3 md:mt-4 green text-base md:text-lg lg:text-xl grid place-items-center mx-auto lg:mx-0">
+            <div class="mt-3 md:mt-4 pushbutton text-base md:text-lg lg:text-xl grid place-items-center mx-auto lg:mx-0 hover:bg-[#1e7b5e] transition-colors duration-300 ease-in ">
                 <a href="header.html" class="py-2">
                     В корзину
                 </a>
@@ -188,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Карточка 2 -->
         <div class="w-full max-w-[367px] mx-auto h-auto lg:h-[529px] relative">
-    <div class="grene text-center relative mx-auto">
+    <div class="bloc text-center relative mx-auto">
                 <img 
                     src="src/img/099590c81e34a0bb551c9acf7b4b8111b058fd0b.png" 
                     alt="Протеин сывороточный" 
@@ -212,7 +245,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 2 342 ₽
             </p>
             
-            <div class="mt-3 md:mt-4 green text-base md:text-lg lg:text-xl grid place-items-center mx-auto lg:mx-0">
+            <div class="mt-3 md:mt-4 pushbutton text-base md:text-lg lg:text-xl grid place-items-center mx-auto lg:mx-0 hover:bg-[#1e7b5e] transition-colors duration-300 ease-in">
                 <a href="header.html" class="py-2">
                     В корзину
                 </a>
@@ -221,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Карточка 3 -->
         <div class="w-full max-w-[367px] mx-auto h-auto lg:h-[529px] relative">
-    <div class="grene text-center relative mx-auto">
+    <div class="bloc text-center relative mx-auto">
         <img 
             src="src/img/dfd5a18d9e97935cd379afb08e3270db388495d3.png" 
             alt="Протеин сывороточный" 
@@ -245,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function() {
         2 342 ₽
     </p>
     
-    <div class="mt-3 md:mt-4 green text-base md:text-lg lg:text-xl grid place-items-center mx-auto lg:mx-0">
+    <div class="mt-3 md:mt-4 pushbutton text-base md:text-lg lg:text-xl grid place-items-center mx-auto lg:mx-0 hover:bg-[#1e7b5e] transition-colors duration-300 ease-in">
         <a href="header.html" class="py-2">
             В корзину
         </a>
@@ -254,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <!-- Карточка 4 -->
         <div class="w-full max-w-[367px] mx-auto h-auto lg:h-[529px] relative">
-          <div class="grene text-center relative mx-auto">
+          <div class="bloc text-center relative mx-auto">
                 <img 
                     src="src/img/06852c4335d77e7ab6d0a091f18f18fceca76583.png" 
                     alt="Протеин сывороточный" 
@@ -278,7 +311,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 2 342 ₽
             </p>
             
-            <div class="mt-3 md:mt-4 green text-base md:text-lg lg:text-xl grid place-items-center mx-auto lg:mx-0">
+            <div class="mt-3 md:mt-4 pushbutton text-base md:text-lg lg:text-xl grid place-items-center mx-auto lg:mx-0 hover:bg-[#1e7b5e] transition-colors duration-300 ease-in">
                 <a href="header.html" class="py-1">
                     В корзину
                 </a>
@@ -292,14 +325,14 @@ document.addEventListener('DOMContentLoaded', function() {
   <h1 class="text-3xl md:text-4xl lg:text-5xl 2xl:text-[55px] mb-5 md:mb-0 heading-font text-center lg:text-left">
     Популярные категории
   </h1>
-  <div class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 lg:gap-[34px] mt-6 lg:mt-[62px]">
+  <div class="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-x-4  gap-y-6 md:gap-x-6 md:gap-y-9 lg:gap-y-[62px] lg:gap-x-[34px] mt-6 lg:mt-[62px]">
     
-    <div class="fgrene md:col-span-2 flex flex-col md:flex-row p-4 lg:p-6 "> 
+    <div class="long-bloc md:col-span-2 flex flex-col md:flex-row p-4 lg:p-6 "> 
       <div class="flex-1"> 
         <h1 class="a5 mb-4 lg:mb-6">
           Протеин
         </h1>
-        <ul class="list-disc list-inside space-y-2 md:space-y-3 ml-4 a4">
+        <ul class="list-disc  list-inside space-y-1 lg:space-y-3 ml-4 a4 ">
           <li>Увеличение мышечной массы</li>
           <li>Улучшение обмена веществ</li>
           <li>Восстановление мышц</li>
@@ -311,14 +344,14 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
 
     <!-- Витамины -->
-    <div class="fullgrene mx-auto p-4 lg:p-6  flex flex-col items-center lg:items-start">
+    <div class="fullbloc  mx-auto p-4 lg:p-6  flex flex-col items-center lg:items-start">
       <h1 class="text-2xl md:text-3xl lg:text-[35px] mb-4 lg:mb-6 text-white text-center lg:text-left">
         Витамины
       </h1>
 <img src="src/2b0dfb7ba38a77a8994c5b874d1a3ea20869e5a5.png" alt="Витамины" class="w-[150px] h-[180px] md:w-[180px] md:h-[220px] lg:w-[206px] lg:h-[282px] mx-auto">    </div>
 
     <!-- Аминокислоты -->
-    <div class="nofullgrene mx-auto p-4 lg:p-6  flex flex-col items-center lg:items-start">
+    <div class="nofullbloc mx-auto p-4 lg:p-6  flex flex-col items-center lg:items-start">
       <h1 class="text-2xl md:text-3xl lg:text-[35px]  text-center lg:text-left">
         Аминокислоты
       </h1>
@@ -327,7 +360,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     
     <!-- Креатин -->
-    <div class="fullgrene mx-auto p-4 lg:p-6  flex flex-col items-center lg:items-start">
+    <div class="fullbloc mx-auto p-4 lg:p-6  flex flex-col items-center lg:items-start">
       <h1 class="text-2xl md:text-3xl lg:text-[35px]  text-white text-center lg:text-left">
         Креатин
       </h1>
@@ -335,12 +368,12 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     
     <!-- Предтренировочный комплекс - занимает 2 колонки -->
-    <div class="fgrene md:col-span-2 flex flex-col md:flex-row p-4 lg:p-6 ">
+    <div class="long-bloc md:col-span-2 flex flex-col md:flex-row p-4 lg:p-6 ">
       <div class="flex-1">
         <h1 class="a5 mb-4 lg:mb-6 text-center lg:text-left  whitespace-normal   ">
           Предтренировочный комплекс
         </h1>
-        <ul class="list-disc list-inside space-y-2 md:space-y-3 ml-4 a4">
+        <ul class="list-disc list-inside space-y-2 md:space-y-3 ml-4 a4 overflow-hidden line-clamp-5">
           <li>Увеличение энергии</li>
           <li>Улучшение концентрации</li>
           <li>Увеличение выносливости</li>
@@ -351,7 +384,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <img src="src/img/e823c5fb897566dc27ec54f5a6332a27fa098ac1.png" alt="Предтренировочный комплекс" class="min-w-[200px] min-h-[180px]  w-[323px] h-[285px] self-center mx-auto  lg:mx-0 mt-4 lg:mt-0 ">     </div>
 
     <!-- Другие категории -->
-    <div class="fullgrene mx-auto p-4 lg:p-6  flex flex-col items-center lg:items-start">
+    <div class="fullbloc mx-auto p-4 lg:p-6  flex flex-col items-center lg:items-start">
       <h1 class="text-2xl md:text-3xl lg:text-[35px]  text-white text-center lg:text-left">
         Другие категории
       </h1>
@@ -359,7 +392,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
   </div>
   <!-- Кнопка Каталог -->
-  <div class="ggreen text-lg md:text-xl lg:text-2xl grid place-items-center mx-auto mt-8 md:mt-12 lg:mt-[62px]">
+  <div class="catalog text-lg md:text-xl lg:text-2xl grid place-items-center mx-auto mt-8 md:mt-12 lg:mt-[62px] hover:bg-[#1e7b5e] transition-colors duration-300 ease-in">
     <a href="menu.html" class="py-2 md:py-3 px-8 md:px-12 rounded-lg">
       Каталог
     </a>
@@ -374,7 +407,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="owl-carousel owl-theme px-4 lg:px-0 gap-50">
     
       <!-- Блок 1 -->
-      <div class="vgrene  whitespace-normal   ">
+      <div class="comment  whitespace-normal   ">
         <div class="flex items-center">
           <img src="src/img/Снимок экрана 2025-09-02 152849.png" alt="другое"  class="max-h-[64px] max-w-[64px] ml-[15px] mt-[15px] rounded-full mb-4 ">
           <h1 class="ml-3 text-xl font-bold">
@@ -387,7 +420,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- Блок 2 -->
-      <div class="vgrene ">
+      <div class="comment ">
         <div class="flex items-center">
           <img src="src/img/Снимок экрана 2025-09-02 152905.png" alt="другое"  class="max-h-[64px] max-w-[64px] ml-[15px] mt-[15px] rounded-full mb-4 object-[25%_25%]">
           <h1 class="ml-3 text-xl font-bold">
@@ -400,7 +433,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- Блок 3 -->
-      <div class="vgrene  ">
+      <div class="comment  ">
         <div class="flex items-center">
           <img src="src/img/Снимок экрана 2025-09-02 152932.png" alt="другое"  class="max-h-[64px] max-w-[64px] ml-[15px] mt-[15px] rounded-full mb-4 object-[25%_25%]">
           <h1 class="ml-3  text-xl font-bold">
@@ -413,7 +446,7 @@ document.addEventListener('DOMContentLoaded', function() {
       </div>
 
       <!-- Блок 4 -->
-      <div class="vgrene  ">
+      <div class="comment  ">
         <div class="flex items-center">
           <img src="src/img/Снимок экрана 2025-09-02 152849.png" alt="другое"  class="max-h-[64px] max-w-[64px] ml-[15px] mt-[15px] rounded-full mb-4 ">
           <h1 class="ml-3 text-xl font-bold">
@@ -476,7 +509,7 @@ $(document).ready(function(){
     Контакты
   </h1>
   
-  <div class="flex flex-col lg:flex-row items-start gap-8 md:gap-12 lg:gap-16"> 
+  <div class="flex flex-col lg:flex-row items-start gap-1"> 
     
     <div class="flex-1 w-full">
       <div class="space-y-6 md:space-y-8 lg:space-y-9"> 
@@ -545,7 +578,7 @@ $(document).ready(function(){
       </div>
     </div>
 
-    <div class="flex-1 w-full mgrene mt-6 lg:mt-0">
+    <div class="flex-1 w-full map  mt-6 lg:mt-0">
       <iframe class="w-full h-[250px] md:h-[300px] lg:h-[310px] rounded-[32px] lg:rounded-[30px]" 
               src="https://yandex.ru/map-widget/v1/?um=constructor%3A33adac18ed2bab68dced24e2b8e8011b28f3c77a01bead313e8b9f068975f313&amp;source=constructor" 
               frameborder="0">
