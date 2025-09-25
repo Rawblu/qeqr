@@ -452,9 +452,15 @@ br {
   
   .space-y-\[31px\] {
     gap: 20px !important;
-  }
-  
-  .mt-\[31px\] {
+}
+
+.mt-\[31px\] {
     margin-top: 20px !important;
-  }
+}
+}
+.heart-container {
+    transition: all 0.2s ease-in-out;
+}
+.heart-container:hover {
+    transform: scale(1.1);
 }

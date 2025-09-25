@@ -338,10 +338,9 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
 
 <script>
-// Обработчик для всех сердечек
 document.querySelectorAll('.heart-container').forEach(container => {
     container.addEventListener('click', function(e) {
-        e.stopPropagation(); // чтобы не срабатывали другие клики
+        e.stopPropagation(); 
         
         const outline = this.querySelector('.heart-outline');
         const filled = this.querySelector('.heart-filled');
@@ -356,15 +355,6 @@ document.querySelectorAll('.heart-container').forEach(container => {
     });
 });
 </script>
-
-<style>
-.heart-container {
-    transition: all 0.2s ease-in-out;
-}
-.heart-container:hover {
-    transform: scale(1.1);
-}
-</style>
 
 <!-- катигории -->
 <section id="populir" class=" mt-[3.22vw] ml-[8.4375vw] mr-[8.4375vw]">
