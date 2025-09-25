@@ -92,7 +92,7 @@ br {
     z-index: 0;
     border-radius: 39.77px;
     }
-    .bloc{
+    .catalogue{
         border-radius: 50px;
         border: 5px #196950  solid;
         max-width: 367px;
@@ -100,26 +100,26 @@ br {
         aspect-ratio: 1/1;
     }
     @media (max-width: 768px) {
-    .bloc {
+    .catalogue {
         width: 280px;
         height: 300px;
         border-width: 5px;
     }
 }
 @media (max-width: 400px) {
-    .bloc {
+    .catalogue {
         width: 250px;
         height: 270px;
     }
 }
-    .smallbloc{
+    .smallcatalogue{
         border-radius: 38px;
         border: 3.77px #196950  solid;
         width: 14.4vw;
         height: 14.4vw;
     }
     @media (max-width: 1200px) {
-    .smallbloc {
+    .smallcatalogue {
         aspect-ratio: 1/1;
         width: auto;
         height: auto;
@@ -139,7 +139,7 @@ br {
         background-color: #196950;
         color: #FFFFFF;  
     }
-    .long-bloc{
+    .longcatalogue{
         border-radius: 50px;
         border: 5px #196950  solid;
         max-width: 790px;
@@ -154,7 +154,7 @@ br {
 
     }
     
-    .long-bloc {
+    .longcatalogue {
         
         max-width: 380px;
         height: auto;
@@ -169,8 +169,8 @@ br {
     }
 }
 @media (min-width: 768px) {
-    .nofullbloc,
-    .fullbloc {
+    .nofullcatalogue,
+    .fullcatalogue{
         width: 100%;
         max-width: 350px;
         height: auto;
@@ -201,14 +201,14 @@ br {
     }
     
 
-    .nofullbloc{
+    .nofullcatalogue{
         border-radius: 50px;
         border: 5px #196950  solid;
         max-width:368px;
         max-height: 381px;
         aspect-ratio: 1/1;
     }
-    .fullbloc{
+    .fullcatalogue{
         border-radius: 50px;
         background-color: #196950;
         border: 5px #196950  solid;
@@ -217,14 +217,14 @@ br {
         aspect-ratio: 1/1;
     }
     @media (max-width: 768px) {
-    .nofullbloc,
-    .fullbloc {
+    .nofullcatalogue,
+    .fullcatalogue {
         width: 100%;
         max-width: 350px;
         height: auto;
     }
     
-    .long-bloc {
+    .longcatalogue {
         width: 100%;
         max-width: 350px;
         height: auto;
@@ -239,22 +239,22 @@ br {
     }
 }
     /* ШРИФТ */
-    .a6 {
+    .font-sm {
         font-size: clamp(0.75rem, 2.5vw, 1.125rem);
         }
-    .a5 {
+    .font-2xl {
         font-size: clamp(1.5rem, 2.5vw, 2.1875rem);
         }
-        .a4 {
+        .font-base {
         font-size: clamp(0.875rem, 3.5vw, 1.25rem);
         }
-        .a3 {
+        .font-max {
         font-size: clamp(1.5rem, 2.5vw, 3.025625rem);
         }
-        .a2 {
+        .font-lg {
         font-size: clamp(0.875rem, 2.5vw, 1.5rem);
         }
-        .a1 {
+        .font-xl {
         font-size: clamp(1.25rem, 2.5vw, 2.5rem);
         }
 
