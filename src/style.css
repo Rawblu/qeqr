@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .hero-section {
-    background-image: url('/src/fdb5bc495a50fb31d4dc3757d525b5a972a6c5af.jpg');
+    background-image: url('/src/img/fdb5bc495a50fb31d4dc3757d525b5a972a6c5af.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,7 +82,7 @@ br {
 }
 
     .section {
-    background-image: url('/src/f35308f961aa15ef349f798db40df8a464a7f6f9.jpg');
+    background-image: url('/src/img/f35308f961aa15ef349f798db40df8a464a7f6f9.jpg');
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
