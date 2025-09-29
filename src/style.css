@@ -1,5 +1,60 @@
 @import "tailwindcss";
 
+.price-selector {
+    width: 350px;
+    margin: 20px auto;
+    user-select: none;
+  }
+  .values {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  input.value-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 71px;
+    height: 28px;
+    text-align: center;
+    padding: 6px 0;
+    font-weight: 600;
+    font-size: 1rem;
+    /* убрать появление стрелок in number input */
+    -moz-appearance: textfield;
+  }
+  input.value-box::-webkit-outer-spin-button,
+  input.value-box::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .slider {
+    position: relative;
+    height: 2px;
+    background: #ddd;
+    border-radius: 4px;
+  }
+  .slider-range {
+    position: absolute;
+    height: 2px;
+    background: #222;
+    border-radius: 4px;
+    top: 0;
+  }
+  .thumb {
+    position: absolute;
+    top: 50%;
+    width: 7px;
+    height: 7px;
+    background: #222;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .thumb:hover {
+    background: #444;
+  }
+
 .hero-section {
     background-image: url('/src/img/fdb5bc495a50fb31d4dc3757d525b5a972a6c5af.jpg');
     background-size: cover;
@@ -43,6 +98,7 @@
     .pushbutton {
         max-width: 216px;
         width: auto;
+        min-height:35px ;
         height: 43.4px;
         border-radius: 33.41px;
         border: 1.11px;
@@ -51,7 +107,8 @@
     }
     @media (max-width: 768px) {
     .pushbutton {
-        border-radius: 16px;
+        height: auto;
+        border-radius: 12px;
         font-size: 16px;
         }
     }
@@ -104,6 +161,7 @@ br {
         width: 280px;
         height: 300px;
         border-width: 5px;
+        border-radius: 32px;
     }
 }
 @media (max-width: 400px) {
@@ -123,6 +181,7 @@ br {
         aspect-ratio: 1/1;
         width: auto;
         height: auto;
+        border-radius: 24px;
     }
     }
     @media (max-width: 768px) {
@@ -146,12 +205,12 @@ br {
         max-height: 381px;
     }
     @media (max-width: 768px) {
-    .nofullbloc,
-    .fullbloc {
+    .nofullcatalogue,
+    .fullcatalogue {
         width: 100%;
         max-width: 350px;
         height: auto;
-
+        border-radius: 24px;
     }
     
     .longcatalogue {
@@ -160,6 +219,7 @@ br {
         height: auto;
         min-height: 300px;
         max-height: 581px;
+        border-radius: 32px;
     }
     
     .catalog {
@@ -168,14 +228,7 @@ br {
         font-size: 18px;
     }
 }
-@media (min-width: 768px) {
-    .nofullcatalogue,
-    .fullcatalogue{
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-    }
-}
+
     .comment{
         border-radius: 25px;
         border: 5px #196950  solid;
@@ -222,6 +275,7 @@ br {
         width: 100%;
         max-width: 350px;
         height: auto;
+        border-radius: 32px;
     }
     
     .longcatalogue {
@@ -463,4 +517,37 @@ br {
 }
 .heart-container:hover {
     transform: scale(1.1);
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width:20px ;
+    min-height: 20px;
+    width: 1.19vw;
+    height: 1.19vw;
+    border: 1.21px solid #d1d5db;
+    border-radius: 4.6px;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    aspect-ratio: 1/1;
+}
+
+/* Состояние когда чекбокс отмечен */
+input[type="checkbox"]:checked {
+    background-color: #196950; 
+    border-color: #18624b;
+}
+
+/* Добавляем галочку */
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    color: white;
+    font-size: 0.9vw;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
